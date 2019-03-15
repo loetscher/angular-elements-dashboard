@@ -1412,7 +1412,7 @@ chokidar@2.0.4:
   optionalDependencies:
     fsevents "^1.2.2"
 
-chokidar@^2.0.0, chokidar@^2.0.2, chokidar@^2.0.3, chokidar@^2.1.1:
+chokidar@^2.0.0, chokidar@^2.0.2, chokidar@^2.0.3, chokidar@^2.1.0, chokidar@^2.1.1:
   version "2.1.2"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/chokidar/-/chokidar-2.1.2.tgz#9c23ea40b01638439e0513864d362aeacc5ad058"
   integrity sha1-nCPqQLAWOEOeBROGTTYq6sxa0Fg=
@@ -3627,6 +3627,11 @@ iferr@^1.0.2:
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/iferr/-/iferr-1.0.2.tgz#e9fde49a9da06dc4a4194c6c9ed6d08305037a6d"
   integrity sha1-6f3kmp2gbcSkGUxsntbQgwUDem0=
 
+ignore-by-default@^1.0.1:
+  version "1.0.1"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/ignore-by-default/-/ignore-by-default-1.0.1.tgz#48ca6d72f6c6a3af00a9ad4ae6876be3889e2b09"
+  integrity sha1-SMptcvbGo68Aqa1K5odr44ieKwk=
+
 ignore-walk@^3.0.1:
   version "3.0.1"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/ignore-walk/-/ignore-walk-3.0.1.tgz#a83e62e7d272ac0e3b551aaa82831a19b69f82f8"
@@ -5364,6 +5369,22 @@ node-static@~0.5.9:
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/node-static/-/node-static-0.5.9.tgz#2f5bf30949e1735958266c269413aebce8cbe899"
   integrity sha1-L1vzCUnhc1lYJmwmlBOuvOjL6Jk=
 
+nodemon@^1.18.7:
+  version "1.18.10"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/nodemon/-/nodemon-1.18.10.tgz#3ba63f64eb4c283cf3e4f75f30817e9d4f393afe"
+  integrity sha1-O6Y/ZOtMKDzz5PdfMIF+nU85Ov4=
+  dependencies:
+    chokidar "^2.1.0"
+    debug "^3.1.0"
+    ignore-by-default "^1.0.1"
+    minimatch "^3.0.4"
+    pstree.remy "^1.1.6"
+    semver "^5.5.0"
+    supports-color "^5.2.0"
+    touch "^3.1.0"
+    undefsafe "^2.0.2"
+    update-notifier "^2.5.0"
+
 "nopt@2 || 3", nopt@3.x:
   version "3.0.6"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/nopt/-/nopt-3.0.6.tgz#c6465dbf08abcd4db359317f79ac68a646b28ff9"
@@ -5378,6 +5399,13 @@ nopt@^4.0.1, nopt@~4.0.1:
   dependencies:
     abbrev "1"
     osenv "^0.1.4"
+
+nopt@~1.0.10:
+  version "1.0.10"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/nopt/-/nopt-1.0.10.tgz#6ddd21bd2a31417b92727dd585f8a6f37608ebee"
+  integrity sha1-bd0hvSoxQXuScn3Vhfim83YI6+4=
+  dependencies:
+    abbrev "1"
 
 normalize-package-data@^2.0.0, normalize-package-data@^2.3.2, normalize-package-data@^2.3.4, normalize-package-data@^2.4.0, normalize-package-data@^2.5.0:
   version "2.5.0"
@@ -5509,6 +5537,14 @@ npm-user-validate@~1.0.0:
   version "1.0.0"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/npm-user-validate/-/npm-user-validate-1.0.0.tgz#8ceca0f5cea04d4e93519ef72d0557a75122e951"
   integrity sha1-jOyg9c6gTU6TUZ73LQVXp1Ei6VE=
+
+npm-watch@^0.6.0:
+  version "0.6.0"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/npm-watch/-/npm-watch-0.6.0.tgz#c00550ddd14fd1dcdd46d4a4cf60a07ba92c389e"
+  integrity sha1-wAVQ3dFP0dzdRtSkz2Cge6ksOJ4=
+  dependencies:
+    nodemon "^1.18.7"
+    through2 "^2.0.0"
 
 npm@^6.5.0:
   version "6.9.0"
@@ -6324,6 +6360,11 @@ psl@^1.1.24:
   version "1.1.31"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/psl/-/psl-1.1.31.tgz#e9aa86d0101b5b105cbe93ac6b784cd547276184"
   integrity sha1-6aqG0BAbWxBcvpOsa3hM1UcnYYQ=
+
+pstree.remy@^1.1.6:
+  version "1.1.6"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/pstree.remy/-/pstree.remy-1.1.6.tgz#73a55aad9e2d95814927131fbf4dc1b62d259f47"
+  integrity sha1-c6VarZ4tlYFJJxMfv03Bti0ln0c=
 
 public-encrypt@^4.0.0:
   version "4.0.3"
@@ -7775,7 +7816,7 @@ supports-color@^3.1.0, supports-color@^3.1.2:
   dependencies:
     has-flag "^1.0.0"
 
-supports-color@^5.1.0, supports-color@^5.3.0, supports-color@^5.5.0:
+supports-color@^5.1.0, supports-color@^5.2.0, supports-color@^5.3.0, supports-color@^5.5.0:
   version "5.5.0"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/supports-color/-/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"
   integrity sha1-4uaaRKyHcveKHsCzW2id9lMO/I8=
@@ -7952,6 +7993,13 @@ to-regex@^3.0.1, to-regex@^3.0.2:
     regex-not "^1.0.2"
     safe-regex "^1.1.0"
 
+touch@^3.1.0:
+  version "3.1.0"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/touch/-/touch-3.1.0.tgz#fe365f5f75ec9ed4e56825e0bb76d24ab74af83b"
+  integrity sha1-/jZfX3XsntTlaCXgu3bSSrdK+Ds=
+  dependencies:
+    nopt "~1.0.10"
+
 tough-cookie@~2.4.3:
   version "2.4.3"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/tough-cookie/-/tough-cookie-2.4.3.tgz#53f36da3f47783b0925afa06ff9f3b165280f781"
@@ -8122,6 +8170,13 @@ umask@^1.1.0, umask@~1.1.0:
   version "1.1.0"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/umask/-/umask-1.1.0.tgz#f29cebf01df517912bb58ff9c4e50fde8e33320d"
   integrity sha1-8pzr8B31F5ErtY/5xOUP3o4zMg0=
+
+undefsafe@^2.0.2:
+  version "2.0.2"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/undefsafe/-/undefsafe-2.0.2.tgz#225f6b9e0337663e0d8e7cfd686fc2836ccace76"
+  integrity sha1-Il9rngM3Zj4Njnz9aG/Cg2zKznY=
+  dependencies:
+    debug "^2.2.0"
 
 union-value@^1.0.0:
   version "1.0.0"

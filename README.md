@@ -18,11 +18,32 @@ Remarks:
 
 ## Start
 
+### Single Build external Custom Elements
 Build the external Custom Elements project before starting the main project:
 
 ```
-npm install
+yarn
 npm run build:ce
 npm start
 ```
+
+### Watch Build for external Custom Elements
+Build the external Custom Elements project before starting the main project and watch changes with automatic redeployment:
+
+```
+yarn
+npm run build:ce:watch
+npm start
+```
+
+open a different console:
+```
+npm run watch
+```
+The watch taks will observe the folder
+```
+dist/external-dashboard-tile
+```
+and copy the assets to the wrapper project
+
 
