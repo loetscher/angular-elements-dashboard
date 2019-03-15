@@ -9,9 +9,11 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "start:ce": "ng serve --project external-dashboard-tile -o",
-    "build:ce": "npm run bundle:ce && npm run copy:ce",
-    "copy:ce": "cpr dist/external-dashboard-tile/main.js src/assets/external-dashboard-tile.bundle.js -o",
-    "bundle:ce": "ng build --project external-dashboard-tile --prod --output-hashing none --single-bundle=true"
+    "build:ce": "npm run bundle:ce && npm run copy:ce && npm run copy:ce:style && npm run copy:ce:assets",
+    "copy:ce": "cpr dist/external-dashboard-tile/main.js src/assets/external-dashboard-tile/external-dashboard-tile.bundle.js -o",
+    "copy:ce:style": "cpr dist/external-dashboard-tile/styles.css src/assets/external-dashboard-tile/styles.css -f -o",
+    "copy:ce:assets": "cpr dist/external-dashboard-tile/IcoMoon-Free.ttf src/assets/external-dashboard-tile/IcoMoon-Free.ttf -f -o",
+    "bundle:ce": "ng build --project external-dashboard-tile --prod --output-hashing none --single-bundle=true --bundle-styles=false"
   },
   "private": true,
   "dependencies": {
