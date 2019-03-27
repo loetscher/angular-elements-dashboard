@@ -147,13 +147,6 @@
     semver "5.6.0"
     symbol-observable "1.2.0"
 
-"@angular/common@^5.0.0":
-  version "5.2.11"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/common/-/common-5.2.11.tgz#ee7520b02510a2868f30b1f91897102d48324edf"
-  integrity sha1-7nUgsCUQooaPMLH5GJcQLUgyTt8=
-  dependencies:
-    tslib "^1.7.1"
-
 "@angular/common@^7.2.0":
   version "7.2.10"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/common/-/common-7.2.10.tgz#0f969e02959e85e259b0d14b7355b7339e6bacd0"
@@ -184,13 +177,6 @@
   integrity sha1-cCuE6B4fQ3a2FcTP+66DEKBhBoE=
   dependencies:
     tslib "^1.9.0"
-
-"@angular/core@^5.0.0":
-  version "5.2.11"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/core/-/core-5.2.11.tgz#0e38fdf4fa038a3c168c72952682f2ee3721f1a3"
-  integrity sha1-Djj99PoDijwWjHKVJoLy7jch8aM=
-  dependencies:
-    tslib "^1.7.1"
 
 "@angular/core@^7.2.0":
   version "7.2.10"
@@ -231,13 +217,6 @@
   integrity sha1-5yEZLH6Ce0SNqrI2uiFIkPKdkxE=
   dependencies:
     tslib "^1.9.0"
-
-"@angular/platform-browser@^5.0.0":
-  version "5.2.11"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/platform-browser/-/platform-browser-5.2.11.tgz#5be379f96d74b4ebe84a447633ed5279cb7e641e"
-  integrity sha1-W+N5+W10tOvoSkR2M+1Sect+ZB4=
-  dependencies:
-    tslib "^1.7.1"
 
 "@angular/platform-browser@^7.2.0":
   version "7.2.10"
@@ -547,6 +526,16 @@ after@0.8.2:
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/after/-/after-0.8.2.tgz#fedb394f9f0e02aa9768e702bda23b505fae7e1f"
   integrity sha1-/ts5T58OAqqXaOcCvaI7UF+ufh8=
 
+ag-grid-angular@^20.2.0:
+  version "20.2.0"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/ag-grid-angular/-/ag-grid-angular-20.2.0.tgz#7ac37ccbe170420c264d3500c0ee5b3a440f7480"
+  integrity sha1-esN8y+FwQgwmTTUAwO5bOkQPdIA=
+
+ag-grid-community@^20.2.0:
+  version "20.2.0"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/ag-grid-community/-/ag-grid-community-20.2.0.tgz#22f26d53e309b51a156878d180c9ec6f16bc6403"
+  integrity sha1-IvJtU+MJtRoVaHjRgMnsbxa8ZAM=
+
 agent-base@4, agent-base@^4.1.0, agent-base@~4.2.1:
   version "4.2.1"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/agent-base/-/agent-base-4.2.1.tgz#d89e5999f797875674c07d87f260fc41e83e8ca9"
@@ -615,17 +604,6 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
   integrity sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
-
-angular-rest-client@^2.0.0:
-  version "2.0.0"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/angular-rest-client/-/angular-rest-client-2.0.0.tgz#187d64ff614f742ac7ff9c02d43fdcc064ed7464"
-  integrity sha1-GH1k/2FPdCrH/5wC1D/cwGTtdGQ=
-  dependencies:
-    "@angular/common" "^5.0.0"
-    "@angular/core" "^5.0.0"
-    "@angular/platform-browser" "^5.0.0"
-    rxjs "5.5.0"
-    zone.js "0.8.4"
 
 ansi-align@^2.0.0:
   version "2.0.0"
@@ -6984,13 +6962,6 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-rxjs@5.5.0:
-  version "5.5.0"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/rxjs/-/rxjs-5.5.0.tgz#26d8f3866eb700e247e0728a147c3d628993d812"
-  integrity sha1-Jtjzhm63AOJH4HKKFHw9YomT2BI=
-  dependencies:
-    symbol-observable "^1.0.1"
-
 rxjs@6.3.3:
   version "6.3.3"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/rxjs/-/rxjs-6.3.3.tgz#3c6a7fa420e844a81390fb1158a9ec614f4bad55"
@@ -7914,7 +7885,7 @@ supports-color@^6.1.0:
   dependencies:
     has-flag "^3.0.0"
 
-symbol-observable@1.2.0, symbol-observable@^1.0.1:
+symbol-observable@1.2.0:
   version "1.2.0"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
   integrity sha1-wiaIrtTqs83C3+rLtWFmBWCgCAQ=
@@ -8133,7 +8104,7 @@ ts-node@~5.0.1:
     source-map-support "^0.5.3"
     yn "^2.0.0"
 
-tslib@^1.7.1, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
+tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.9.3"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
   integrity sha1-1+TdeSRdhUKMTX5IIqeZF5VMooY=
@@ -8952,11 +8923,6 @@ yn@^2.0.0:
   version "2.0.0"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/yn/-/yn-2.0.0.tgz#e5adabc8acf408f6385fc76495684c88e6af689a"
   integrity sha1-5a2ryKz0CPY4X8dklWhMiOavaJo=
-
-zone.js@0.8.4:
-  version "0.8.4"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/zone.js/-/zone.js-0.8.4.tgz#cc40ae5a1c879601c5ebba2096b5c80f0c4c3602"
-  integrity sha1-zECuWhyHlgHF67oglrXIDwxMNgI=
 
 zone.js@^0.8.26:
   version "0.8.29"
