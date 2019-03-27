@@ -28,7 +28,7 @@ export class DashboardComponent implements OnInit {
   addDefault(): void {
     this.add('dashboard-tile');
   }
-  
+
   addLazy(): void {
     this.lazyService.load().then(_ => {
       this.add('lazy-dashboard-tile');
@@ -37,7 +37,7 @@ export class DashboardComponent implements OnInit {
 
   addExternal(): void {
     this.externalService.load();
-    this.add('external-dashboard-tile');
+    this.add('b9e-web-component');
   }
 
   add(tileKind: string): void {

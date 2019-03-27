@@ -20,5 +20,23 @@
         </tr>
       </table>
     </div>
+    <button (click)="cancelWorkflowNG()">Cancel Workflow</button>
+    <div>
+      Activity Configuration:
+      <pre>
+        {{activityConf | json}}
+    </pre>
+    </div>
+    <div>
+      Activity ConfigurationId:
+      <pre>
+      {{activityConfId}}
+    </pre>
+    </div>
+    <div>
+        Vehicle Information:
+        <pre>
+          {{vehicle | json}}
+        </pre>
   </div>
 </div>

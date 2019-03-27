@@ -10,6 +10,14 @@
     "@angular-devkit/core" "7.1.4"
     rxjs "6.3.3"
 
+"@angular-devkit/architect@0.13.6":
+  version "0.13.6"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular-devkit/architect/-/architect-0.13.6.tgz#7758ab9f288cfd4f64d8b88b0700bac5c4961d06"
+  integrity sha1-d1irnyiM/U9k2LiLBwC6xcSWHQY=
+  dependencies:
+    "@angular-devkit/core" "7.3.6"
+    rxjs "6.3.3"
+
 "@angular-devkit/build-angular@^0.11.4":
   version "0.11.4"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular-devkit/build-angular/-/build-angular-0.11.4.tgz#795084e29c66a71da15227cf2ac29794aa807c7c"
@@ -94,47 +102,69 @@
     rxjs "6.3.3"
     source-map "0.7.3"
 
-"@angular-devkit/schematics@7.1.4":
-  version "7.1.4"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular-devkit/schematics/-/schematics-7.1.4.tgz#d2828fb86b5453395fab12a36779d0fd9fbdadc2"
-  integrity sha1-0oKPuGtUUzlfqxKjZ3nQ/Z+9rcI=
+"@angular-devkit/core@7.3.6":
+  version "7.3.6"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular-devkit/core/-/core-7.3.6.tgz#bc11ca571187f0f0ce9df012332794907e0b8133"
+  integrity sha1-vBHKVxGH8PDOnfASMyeUkH4LgTM=
   dependencies:
-    "@angular-devkit/core" "7.1.4"
+    ajv "6.9.1"
+    chokidar "2.0.4"
+    fast-json-stable-stringify "2.0.0"
+    rxjs "6.3.3"
+    source-map "0.7.3"
+
+"@angular-devkit/schematics@7.3.6":
+  version "7.3.6"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular-devkit/schematics/-/schematics-7.3.6.tgz#5580b730b1bae5397f5860cfb0d7270fec6e6deb"
+  integrity sha1-VYC3MLG65Tl/WGDPsNcnD+xubes=
+  dependencies:
+    "@angular-devkit/core" "7.3.6"
     rxjs "6.3.3"
 
-"@angular/animations@^7.1.4":
-  version "7.2.9"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/animations/-/animations-7.2.9.tgz#1bfacb76dfd80656e28edb4efdfd3154e56f1c29"
-  integrity sha1-G/rLdt/YBlbijttO/f0xVOVvHCk=
+"@angular/animations@^7.2.0":
+  version "7.2.10"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/animations/-/animations-7.2.10.tgz#a651c9526bc0c2860eca424d73d7cd87fee5793b"
+  integrity sha1-plHJUmvAwoYOykJNc9fNh/7leTs=
   dependencies:
     tslib "^1.9.0"
 
-"@angular/cli@~7.1.4":
-  version "7.1.4"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/cli/-/cli-7.1.4.tgz#f07ee4e979ec202bf2fd91a665e3d2d6c065bbe1"
-  integrity sha1-8H7k6XnsICvy/ZGmZePS1sBlu+E=
+"@angular/cli@~7.3.5":
+  version "7.3.6"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/cli/-/cli-7.3.6.tgz#4bcaec6f371095e8d88384408ee4c9a6852fb97c"
+  integrity sha1-S8rsbzcQlejYg4RAjuTJpoUvuXw=
   dependencies:
-    "@angular-devkit/architect" "0.11.4"
-    "@angular-devkit/core" "7.1.4"
-    "@angular-devkit/schematics" "7.1.4"
-    "@schematics/angular" "7.1.4"
-    "@schematics/update" "0.11.4"
-    inquirer "6.2.0"
-    opn "5.3.0"
-    semver "5.5.1"
+    "@angular-devkit/architect" "0.13.6"
+    "@angular-devkit/core" "7.3.6"
+    "@angular-devkit/schematics" "7.3.6"
+    "@schematics/angular" "7.3.6"
+    "@schematics/update" "0.13.6"
+    "@yarnpkg/lockfile" "1.1.0"
+    ini "1.3.5"
+    inquirer "6.2.1"
+    npm-package-arg "6.1.0"
+    opn "5.4.0"
+    pacote "9.4.0"
+    semver "5.6.0"
     symbol-observable "1.2.0"
 
-"@angular/common@^7.1.4":
-  version "7.2.9"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/common/-/common-7.2.9.tgz#eeb3d0332e14f737bfb9a63b8347b3dd625e57fe"
-  integrity sha1-7rPQMy4U9ze/uaY7g0ez3WJeV/4=
+"@angular/common@^5.0.0":
+  version "5.2.11"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/common/-/common-5.2.11.tgz#ee7520b02510a2868f30b1f91897102d48324edf"
+  integrity sha1-7nUgsCUQooaPMLH5GJcQLUgyTt8=
+  dependencies:
+    tslib "^1.7.1"
+
+"@angular/common@^7.2.0":
+  version "7.2.10"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/common/-/common-7.2.10.tgz#0f969e02959e85e259b0d14b7355b7339e6bacd0"
+  integrity sha1-D5aeApWeheJZsNFLc1W3M55rrNA=
   dependencies:
     tslib "^1.9.0"
 
-"@angular/compiler-cli@^7.1.4":
-  version "7.2.9"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/compiler-cli/-/compiler-cli-7.2.9.tgz#2c1c970969a956fe148a96fe402704626568d3bc"
-  integrity sha1-LByXCWmpVv4Uipb+QCcEYmVo07w=
+"@angular/compiler-cli@^7.2.0":
+  version "7.2.10"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/compiler-cli/-/compiler-cli-7.2.10.tgz#e1f06b37d3288d327fc46a337e49ac032c483bb2"
+  integrity sha1-4fBrN9MojTJ/xGozfkmsAyxIO7I=
   dependencies:
     canonical-path "1.0.0"
     chokidar "^2.1.1"
@@ -148,64 +178,78 @@
     tslib "^1.9.0"
     yargs "9.0.1"
 
-"@angular/compiler@^7.1.4":
-  version "7.2.9"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/compiler/-/compiler-7.2.9.tgz#92dd0d9fd26fa7cfdbc8c75d0be0d96bd6432fbb"
-  integrity sha1-kt0Nn9Jvp8/byMddC+DZa9ZDL7s=
+"@angular/compiler@^7.2.0":
+  version "7.2.10"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/compiler/-/compiler-7.2.10.tgz#702b84e81e1f4376b615c4cffbae8310a0610681"
+  integrity sha1-cCuE6B4fQ3a2FcTP+66DEKBhBoE=
   dependencies:
     tslib "^1.9.0"
 
-"@angular/core@^7.1.4":
-  version "7.2.9"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/core/-/core-7.2.9.tgz#43ca94adf74fd8ad9ba0b015b3b979a5d04fb3a6"
-  integrity sha1-Q8qUrfdP2K2boLAVs7l5pdBPs6Y=
+"@angular/core@^5.0.0":
+  version "5.2.11"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/core/-/core-5.2.11.tgz#0e38fdf4fa038a3c168c72952682f2ee3721f1a3"
+  integrity sha1-Djj99PoDijwWjHKVJoLy7jch8aM=
+  dependencies:
+    tslib "^1.7.1"
+
+"@angular/core@^7.2.0":
+  version "7.2.10"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/core/-/core-7.2.10.tgz#dfcdbf88480cbab441963ccecaef228b058c8869"
+  integrity sha1-382/iEgMurRBljzOyu8iiwWMiGk=
   dependencies:
     tslib "^1.9.0"
 
-"@angular/elements@^7.1.4":
-  version "7.2.9"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/elements/-/elements-7.2.9.tgz#8d95316b663265e84080ebecf80eb24974903ef3"
-  integrity sha1-jZUxa2YyZehAgOvs+A6ySXSQPvM=
+"@angular/elements@^7.2.0":
+  version "7.2.10"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/elements/-/elements-7.2.10.tgz#dfe7f850da71df041877e3f60a54fa92f7e9b8ef"
+  integrity sha1-3+f4UNpx3wQYd+P2ClT6kvfpuO8=
   dependencies:
     tslib "^1.9.0"
 
-"@angular/forms@^7.1.4":
-  version "7.2.9"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/forms/-/forms-7.2.9.tgz#1cc46542b422654ac87a6ead84cb4d9a7e73b0e8"
-  integrity sha1-HMRlQrQiZUrIem6thMtNmn5zsOg=
+"@angular/forms@^7.2.0":
+  version "7.2.10"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/forms/-/forms-7.2.10.tgz#ab4b5d702e24921b60f8e0e6df527602f99d05c4"
+  integrity sha1-q0tdcC4kkhtg+ODm31J2AvmdBcQ=
   dependencies:
     tslib "^1.9.0"
 
-"@angular/http@^7.1.4":
-  version "7.2.9"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/http/-/http-7.2.9.tgz#074c6ed2860e5f56f3ea15ce7819807f36ee158c"
-  integrity sha1-B0xu0oYOX1bz6hXOeBmAfzbuFYw=
+"@angular/http@^7.2.0":
+  version "7.2.10"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/http/-/http-7.2.10.tgz#f8906c13e1eaa440ee3401a519ec9579f707220e"
+  integrity sha1-+JBsE+HqpEDuNAGlGeyVefcHIg4=
   dependencies:
     tslib "^1.9.0"
 
-"@angular/language-service@^7.1.4":
-  version "7.2.9"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/language-service/-/language-service-7.2.9.tgz#50a74f80a42b069c6a3a0844ee6af3098f8bd48b"
-  integrity sha1-UKdPgKQrBpxqOghE7mrzCY+L1Is=
+"@angular/language-service@^7.2.0":
+  version "7.2.10"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/language-service/-/language-service-7.2.10.tgz#5550fa689f1b35c78cfee65644cc00f0e7778325"
+  integrity sha1-VVD6aJ8bNceM/uZWRMwA8Od3gyU=
 
-"@angular/platform-browser-dynamic@^7.1.4":
-  version "7.2.9"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/platform-browser-dynamic/-/platform-browser-dynamic-7.2.9.tgz#bfbdf1a906f1363440cd4f18f9dd64a369a7b55a"
-  integrity sha1-v73xqQbxNjRAzU8Y+d1ko2mntVo=
+"@angular/platform-browser-dynamic@^7.2.0":
+  version "7.2.10"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/platform-browser-dynamic/-/platform-browser-dynamic-7.2.10.tgz#e721192c7e827b448daab236ba214890f29d9311"
+  integrity sha1-5yEZLH6Ce0SNqrI2uiFIkPKdkxE=
   dependencies:
     tslib "^1.9.0"
 
-"@angular/platform-browser@^7.1.4":
-  version "7.2.9"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/platform-browser/-/platform-browser-7.2.9.tgz#4259eb9c41d152c580ab283b858a938fc0058421"
-  integrity sha1-QlnrnEHRUsWAqyg7hYqTj8AFhCE=
+"@angular/platform-browser@^5.0.0":
+  version "5.2.11"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/platform-browser/-/platform-browser-5.2.11.tgz#5be379f96d74b4ebe84a447633ed5279cb7e641e"
+  integrity sha1-W+N5+W10tOvoSkR2M+1Sect+ZB4=
+  dependencies:
+    tslib "^1.7.1"
+
+"@angular/platform-browser@^7.2.0":
+  version "7.2.10"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/platform-browser/-/platform-browser-7.2.10.tgz#bdd48bf7412ec95b8bd4bb6e08d80f5011385030"
+  integrity sha1-vdSL90EuyVuL1LtuCNgPUBE4UDA=
   dependencies:
     tslib "^1.9.0"
 
-"@angular/router@^7.1.4":
-  version "7.2.9"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/router/-/router-7.2.9.tgz#63fabbaa4dc83c32fbc2858c621916ea7b1690a1"
-  integrity sha1-Y/q7qk3IPDL7woWMYhkW6nsWkKE=
+"@angular/router@^7.2.0":
+  version "7.2.10"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@angular/router/-/router-7.2.10.tgz#1842f0e19a38faf7246e69ee16dc5f62f5096e79"
+  integrity sha1-GELw4Zo4+vckbmnuFtxfYvUJbnk=
   dependencies:
     tslib "^1.9.0"
 
@@ -220,27 +264,27 @@
     tree-kill "1.2.0"
     webpack-sources "1.2.0"
 
-"@schematics/angular@7.1.4":
-  version "7.1.4"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@schematics/angular/-/angular-7.1.4.tgz#cec4a5b793e54bd624018b6b5b4b917c467d22a5"
-  integrity sha1-zsSlt5PlS9YkAYtrW0uRfEZ9IqU=
+"@schematics/angular@7.3.6":
+  version "7.3.6"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@schematics/angular/-/angular-7.3.6.tgz#e827111e7d3cdf950efcca504389cbade3c9c59a"
+  integrity sha1-6CcRHn0835UO/MpQQ4nLrePJxZo=
   dependencies:
-    "@angular-devkit/core" "7.1.4"
-    "@angular-devkit/schematics" "7.1.4"
-    typescript "3.1.6"
+    "@angular-devkit/core" "7.3.6"
+    "@angular-devkit/schematics" "7.3.6"
+    typescript "3.2.4"
 
-"@schematics/update@0.11.4":
-  version "0.11.4"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@schematics/update/-/update-0.11.4.tgz#47407cff57dba8ffc6826e1328fefd526fab2721"
-  integrity sha1-R0B8/1fbqP/Ggm4TKP79Um+rJyE=
+"@schematics/update@0.13.6":
+  version "0.13.6"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@schematics/update/-/update-0.13.6.tgz#7d114b50e99af0b77ea537a50341a81a80240a02"
+  integrity sha1-fRFLUOma8Ld+pTelA0GoGoAkCgI=
   dependencies:
-    "@angular-devkit/core" "7.1.4"
-    "@angular-devkit/schematics" "7.1.4"
+    "@angular-devkit/core" "7.3.6"
+    "@angular-devkit/schematics" "7.3.6"
     "@yarnpkg/lockfile" "1.1.0"
     ini "1.3.5"
-    pacote "9.1.1"
+    pacote "9.4.0"
     rxjs "6.3.3"
-    semver "5.5.1"
+    semver "5.6.0"
     semver-intersect "1.4.0"
 
 "@swimlane/ngx-charts@^8.1.0":
@@ -537,6 +581,16 @@ ajv@6.5.3:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
+ajv@6.9.1:
+  version "6.9.1"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/ajv/-/ajv-6.9.1.tgz#a4d3683d74abc5670e75f0b16520f70a20ea8dc1"
+  integrity sha1-pNNoPXSrxWcOdfCxZSD3CiDqjcE=
+  dependencies:
+    fast-deep-equal "^2.0.1"
+    fast-json-stable-stringify "^2.0.0"
+    json-schema-traverse "^0.4.1"
+    uri-js "^4.2.2"
+
 ajv@^5.0.0:
   version "5.5.2"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/ajv/-/ajv-5.5.2.tgz#73b5eeca3fab653e3d3f9422b341ad42205dc965"
@@ -561,6 +615,17 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
   integrity sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
+
+angular-rest-client@^2.0.0:
+  version "2.0.0"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/angular-rest-client/-/angular-rest-client-2.0.0.tgz#187d64ff614f742ac7ff9c02d43fdcc064ed7464"
+  integrity sha1-GH1k/2FPdCrH/5wC1D/cwGTtdGQ=
+  dependencies:
+    "@angular/common" "^5.0.0"
+    "@angular/core" "^5.0.0"
+    "@angular/platform-browser" "^5.0.0"
+    rxjs "5.5.0"
+    zone.js "0.8.4"
 
 ansi-align@^2.0.0:
   version "2.0.0"
@@ -593,6 +658,11 @@ ansi-regex@^3.0.0:
   version "3.0.0"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/ansi-regex/-/ansi-regex-3.0.0.tgz#ed0317c322064f79466c02966bddb605ab37d998"
   integrity sha1-7QMXwyIGT3lGbAKWa922Bas32Zg=
+
+ansi-regex@^4.1.0:
+  version "4.1.0"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/ansi-regex/-/ansi-regex-4.1.0.tgz#8b9f8f08cf1acb843756a839ca8c7e3168c51997"
+  integrity sha1-i5+PCM8ay4Q3Vqg5yox+MWjFGZc=
 
 ansi-styles@^2.2.1:
   version "2.2.1"
@@ -1026,7 +1096,7 @@ blocking-proxy@^1.0.0:
   dependencies:
     minimist "^1.2.0"
 
-bluebird@^3.3.0, bluebird@^3.5.0, bluebird@^3.5.1, bluebird@^3.5.2, bluebird@^3.5.3:
+bluebird@^3.3.0, bluebird@^3.5.0, bluebird@^3.5.1, bluebird@^3.5.3:
   version "3.5.3"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/bluebird/-/bluebird-3.5.3.tgz#7d01c6f9616c9a51ab0f8c549a79dfe6ec33efa7"
   integrity sha1-fQHG+WFsmlGrD4xUmnnf5uwz76c=
@@ -1279,7 +1349,7 @@ cacache@^10.0.4:
     unique-filename "^1.1.0"
     y18n "^4.0.0"
 
-cacache@^11.0.1, cacache@^11.0.2, cacache@^11.2.0, cacache@^11.3.2:
+cacache@^11.0.1, cacache@^11.0.2, cacache@^11.3.2:
   version "11.3.2"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/cacache/-/cacache-11.3.2.tgz#2d81e308e3d258ca38125b676b98b2ac9ce69bfa"
   integrity sha1-LYHjCOPSWMo4Eltna5iyrJzmm/o=
@@ -3740,10 +3810,10 @@ init-package-json@^1.10.3:
     validate-npm-package-license "^3.0.1"
     validate-npm-package-name "^3.0.0"
 
-inquirer@6.2.0:
-  version "6.2.0"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/inquirer/-/inquirer-6.2.0.tgz#51adcd776f661369dc1e894859c2560a224abdd8"
-  integrity sha1-Ua3Nd29mE2ncHolIWcJWCiJKvdg=
+inquirer@6.2.1:
+  version "6.2.1"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/inquirer/-/inquirer-6.2.1.tgz#9943fc4882161bdb0b0c9276769c75b32dbfcd52"
+  integrity sha1-mUP8SIIWG9sLDJJ2dpx1sy2/zVI=
   dependencies:
     ansi-escapes "^3.0.0"
     chalk "^2.0.0"
@@ -3756,7 +3826,7 @@ inquirer@6.2.0:
     run-async "^2.2.0"
     rxjs "^6.1.0"
     string-width "^2.1.0"
-    strip-ansi "^4.0.0"
+    strip-ansi "^5.0.0"
     through "^2.3.6"
 
 install@^0.12.1:
@@ -5478,7 +5548,7 @@ npm-logical-tree@^1.2.1:
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/npm-logical-tree/-/npm-logical-tree-1.2.1.tgz#44610141ca24664cad35d1e607176193fd8f5b88"
   integrity sha1-RGEBQcokZkytNdHmBxdhk/2PW4g=
 
-"npm-package-arg@^4.0.0 || ^5.0.0 || ^6.0.0", npm-package-arg@^6.0.0, npm-package-arg@^6.1.0:
+npm-package-arg@6.1.0, "npm-package-arg@^4.0.0 || ^5.0.0 || ^6.0.0", npm-package-arg@^6.0.0, npm-package-arg@^6.1.0:
   version "6.1.0"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/npm-package-arg/-/npm-package-arg-6.1.0.tgz#15ae1e2758a5027efb4c250554b85a737db7fcc1"
   integrity sha1-Fa4eJ1ilAn77TCUFVLhac323/ME=
@@ -5496,7 +5566,7 @@ npm-packlist@^1.1.12, npm-packlist@^1.1.6, npm-packlist@^1.4.1:
     ignore-walk "^3.0.1"
     npm-bundled "^1.0.1"
 
-npm-pick-manifest@^2.1.0, npm-pick-manifest@^2.2.3:
+npm-pick-manifest@^2.2.3:
   version "2.2.3"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/npm-pick-manifest/-/npm-pick-manifest-2.2.3.tgz#32111d2a9562638bb2c8f2bf27f7f3092c8fae40"
   integrity sha1-MhEdKpViY4uyyPK/J/fzCSyPrkA=
@@ -5766,7 +5836,7 @@ opn@5.3.0:
   dependencies:
     is-wsl "^1.1.0"
 
-opn@^5.1.0:
+opn@5.4.0, opn@^5.1.0:
   version "5.4.0"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/opn/-/opn-5.4.0.tgz#cb545e7aab78562beb11aa3bfabc7042e1761035"
   integrity sha1-y1Reeqt4VivrEao7+rxwQuF2EDU=
@@ -5916,17 +5986,17 @@ package-json@^4.0.0:
     registry-url "^3.0.3"
     semver "^5.1.0"
 
-pacote@9.1.1:
-  version "9.1.1"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/pacote/-/pacote-9.1.1.tgz#25091f75a25021de8be8d34cc6408728fca3579b"
-  integrity sha1-JQkfdaJQId6L6NNMxkCHKPyjV5s=
+pacote@9.4.0:
+  version "9.4.0"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/pacote/-/pacote-9.4.0.tgz#af979abdeb175cd347c3e33be3241af1ed254807"
+  integrity sha1-r5eavesXXNNHw+M74yQa8e0lSAc=
   dependencies:
-    bluebird "^3.5.2"
-    cacache "^11.2.0"
+    bluebird "^3.5.3"
+    cacache "^11.3.2"
     figgy-pudding "^3.5.1"
     get-stream "^4.1.0"
     glob "^7.1.3"
-    lru-cache "^4.1.3"
+    lru-cache "^5.1.1"
     make-fetch-happen "^4.0.1"
     minimatch "^3.0.4"
     minipass "^2.3.5"
@@ -5935,7 +6005,7 @@ pacote@9.1.1:
     normalize-package-data "^2.4.0"
     npm-package-arg "^6.1.0"
     npm-packlist "^1.1.12"
-    npm-pick-manifest "^2.1.0"
+    npm-pick-manifest "^2.2.3"
     npm-registry-fetch "^3.8.0"
     osenv "^0.1.5"
     promise-inflight "^1.0.1"
@@ -5945,7 +6015,7 @@ pacote@9.1.1:
     safe-buffer "^5.1.2"
     semver "^5.6.0"
     ssri "^6.0.1"
-    tar "^4.4.6"
+    tar "^4.4.8"
     unique-filename "^1.1.1"
     which "^1.3.1"
 
@@ -6914,6 +6984,13 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
+rxjs@5.5.0:
+  version "5.5.0"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/rxjs/-/rxjs-5.5.0.tgz#26d8f3866eb700e247e0728a147c3d628993d812"
+  integrity sha1-Jtjzhm63AOJH4HKKFHw9YomT2BI=
+  dependencies:
+    symbol-observable "^1.0.1"
+
 rxjs@6.3.3:
   version "6.3.3"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/rxjs/-/rxjs-6.3.3.tgz#3c6a7fa420e844a81390fb1158a9ec614f4bad55"
@@ -7059,7 +7136,7 @@ semver-intersect@1.4.0:
   dependencies:
     semver "^5.0.0"
 
-"semver@2 || 3 || 4 || 5", "semver@2.x || 3.x || 4 || 5", "semver@^2.3.0 || 3.x || 4 || 5", semver@^5.0.0, semver@^5.0.3, semver@^5.1.0, semver@^5.3.0, semver@^5.4.1, semver@^5.5.0, semver@^5.5.1, semver@^5.6.0:
+"semver@2 || 3 || 4 || 5", "semver@2.x || 3.x || 4 || 5", semver@5.6.0, "semver@^2.3.0 || 3.x || 4 || 5", semver@^5.0.0, semver@^5.0.3, semver@^5.1.0, semver@^5.3.0, semver@^5.4.1, semver@^5.5.0, semver@^5.5.1, semver@^5.6.0:
   version "5.6.0"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/semver/-/semver-5.6.0.tgz#7e74256fbaa49c75aa7c7a205cc22799cac80004"
   integrity sha1-fnQlb7qknHWqfHogXMInmcrIAAQ=
@@ -7746,6 +7823,13 @@ strip-ansi@^4.0.0:
   dependencies:
     ansi-regex "^3.0.0"
 
+strip-ansi@^5.0.0:
+  version "5.2.0"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/strip-ansi/-/strip-ansi-5.2.0.tgz#8c9a536feb6afc962bdfa5b104a5091c1ad9c0ae"
+  integrity sha1-jJpTb+tq/JYr36WxBKUJHBrZwK4=
+  dependencies:
+    ansi-regex "^4.1.0"
+
 strip-bom@^2.0.0:
   version "2.0.0"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/strip-bom/-/strip-bom-2.0.0.tgz#6219a85616520491f35788bdbf1447a99c7e6b0e"
@@ -7830,7 +7914,7 @@ supports-color@^6.1.0:
   dependencies:
     has-flag "^3.0.0"
 
-symbol-observable@1.2.0:
+symbol-observable@1.2.0, symbol-observable@^1.0.1:
   version "1.2.0"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
   integrity sha1-wiaIrtTqs83C3+rLtWFmBWCgCAQ=
@@ -7849,7 +7933,7 @@ tar@^2.0.0:
     fstream "^1.0.2"
     inherits "2"
 
-tar@^4, tar@^4.4.6, tar@^4.4.8:
+tar@^4, tar@^4.4.8:
   version "4.4.8"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/tar/-/tar-4.4.8.tgz#b19eec3fde2a96e64666df9fdb40c5ca1bc3747d"
   integrity sha1-sZ7sP94qluZGZt+f20DFyhvDdH0=
@@ -8049,7 +8133,7 @@ ts-node@~5.0.1:
     source-map-support "^0.5.3"
     yn "^2.0.0"
 
-tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
+tslib@^1.7.1, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.9.3"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
   integrity sha1-1+TdeSRdhUKMTX5IIqeZF5VMooY=
@@ -8120,6 +8204,11 @@ typescript@3.1.6, typescript@~3.1.6:
   version "3.1.6"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/typescript/-/typescript-3.1.6.tgz#b6543a83cfc8c2befb3f4c8fba6896f5b0c9be68"
   integrity sha1-tlQ6g8/Iwr77P0yPumiW9bDJvmg=
+
+typescript@3.2.4:
+  version "3.2.4"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/typescript/-/typescript-3.2.4.tgz#c585cb952912263d915b462726ce244ba510ef3d"
+  integrity sha1-xYXLlSkSJj2RW0YnJs4kS6UQ7z0=
 
 uglify-es@^3.3.4:
   version "3.3.9"
@@ -8863,6 +8952,11 @@ yn@^2.0.0:
   version "2.0.0"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/yn/-/yn-2.0.0.tgz#e5adabc8acf408f6385fc76495684c88e6af689a"
   integrity sha1-5a2ryKz0CPY4X8dklWhMiOavaJo=
+
+zone.js@0.8.4:
+  version "0.8.4"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/zone.js/-/zone.js-0.8.4.tgz#cc40ae5a1c879601c5ebba2096b5c80f0c4c3602"
+  integrity sha1-zECuWhyHlgHF67oglrXIDwxMNgI=
 
 zone.js@^0.8.26:
   version "0.8.29"
