@@ -141,7 +141,12 @@
       "sourceRoot": "projects/external-dashboard-tile/src",
       "projectType": "application",
       "prefix": "app",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "prefix": "app",
+          "styleext": "scss"
+        }
+      },
       "architect": {
         "build": {
           "builder": "ngx-build-plus:build",

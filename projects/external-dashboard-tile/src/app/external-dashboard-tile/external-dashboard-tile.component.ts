@@ -5,8 +5,8 @@ import {GridOptions} from 'ag-grid-community';
 @Component({
   // selector: 'app-external-dashboard-tile',
   templateUrl: './external-dashboard-tile.component.html',
-  styleUrls: ['./external-dashboard-tile.component.css'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./external-dashboard-tile.component.scss'],
+  encapsulation: ViewEncapsulation.ShadowDom
 })
 export class ExternalDashboardTileComponent implements OnInit, AfterViewInit {
 
@@ -29,6 +29,7 @@ export class ExternalDashboardTileComponent implements OnInit, AfterViewInit {
   constructor(private el: ElementRef,
     private backenService: BackendService,
     private zone: NgZone) {
+      console.log('init!');
       this._gridOptions = <GridOptions>{};
       this._gridOptions.columnDefs = [
           {
