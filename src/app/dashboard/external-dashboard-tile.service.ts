@@ -16,6 +16,8 @@ export class ExternalDashboardTileService {
       return;
     }
     // load css
+    // load css is needed for IconMoon Font loading as @font-face: is not supported in shadow dom... :-(
+    // see https://bugs.chromium.org/p/chromium/issues/detail?id=336876
     const styles = document.createElement('link');
     styles.rel = 'stylesheet';
     styles.href = `${this.basePath}styles.css`;

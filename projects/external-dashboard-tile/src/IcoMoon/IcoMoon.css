@@ -1,9 +1,4 @@
-@font-face {
-    font-family: 'IcoMoon-Free';
-    src: url('IcoMoon-Free.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+@import 'IcoMoonFontFace.css';
 
 .icon {
     /* use !important to prevent issues with browser extensions that change fonts */

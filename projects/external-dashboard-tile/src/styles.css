@@ -1,2 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+/**
 @import 'IcoMoon/IcoMoon.css'
+*/
+
+/**
+is needed for IconMoon Font loading as @font-face: is not supported in shadow dom... :-(
+see https://bugs.chromium.org/p/chromium/issues/detail?id=336876
+Export css to include it in the host page
+*/
+@import 'IcoMoon/IcoMoonFontFace.css'
+
