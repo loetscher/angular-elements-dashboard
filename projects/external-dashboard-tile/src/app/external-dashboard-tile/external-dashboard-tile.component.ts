@@ -6,7 +6,7 @@ import {GridOptions} from 'ag-grid-community';
   // selector: 'app-external-dashboard-tile',
   templateUrl: './external-dashboard-tile.component.html',
   styleUrls: ['./external-dashboard-tile.component.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class ExternalDashboardTileComponent implements OnInit, AfterViewInit {
 
@@ -19,6 +19,8 @@ export class ExternalDashboardTileComponent implements OnInit, AfterViewInit {
   cancelWfl = new EventEmitter<string>();
   @Input()
   activityConf: any;
+  @Input()
+  b9eApi: any;
   @Input()
   activityConfId: string;
 
@@ -48,7 +50,7 @@ export class ExternalDashboardTileComponent implements OnInit, AfterViewInit {
           {id: 5, value: 10},
           {id: 10, value: 15},
           {id: 15, value: 20}
-      ]
+      ];
   }
 
   ngOnInit(): void {
@@ -79,6 +81,14 @@ export class ExternalDashboardTileComponent implements OnInit, AfterViewInit {
     const customEvent = new CustomEvent('CustomWebcomponentEvent', {
       bubbles: true, cancelable: true, detail: 'cancel workflow (dispatched)' });
     this.el.nativeElement.dispatchEvent(customEvent);
+  }
+
+  public cancelWorkflowAPI() {
+    this.b9eApi.workflowEngine().cancel();
+  }
+
+  public showMessage() {
+    this.b9eApi.showMessage('Hello b9e World');
   }
 
   private loadVehicle(objId: string, entity = 'VEH') {

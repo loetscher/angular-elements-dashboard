@@ -26,7 +26,8 @@
     "copy:ce:lib": "cpr dist/external-dashboard-tile/main.js src/assets/external-dashboard-tile/external-dashboard-tile.bundle.js -o",
     "copy:ce:style": "cpr dist/external-dashboard-tile/styles.css src/assets/external-dashboard-tile/styles.css -f -o",
     "copy:ce:assets": "cpr dist/external-dashboard-tile/IcoMoon-Free.ttf src/assets/external-dashboard-tile/IcoMoon-Free.ttf -f -o",
-    "bundle:ce": "ng build --project external-dashboard-tile --prod --output-hashing none --single-bundle=true --bundle-styles=false"
+    "bundle:ce": "ng build --project external-dashboard-tile --prod --output-hashing none --single-bundle=true --bundle-styles=false",
+    "release:ce": "npm run build:ce && npm run copy:ce:resources"
   },
   "private": true,
   "dependencies": {

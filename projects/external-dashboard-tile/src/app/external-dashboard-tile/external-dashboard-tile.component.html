@@ -1,8 +1,10 @@
+
 <div class="card">
   <div class="header">
     <h1 class="title">External <span class="icon icon-rocket"></span> </h1>
   </div>
   <div class="content">
+    <div>Icon from LC <i class="icon--navigation"></i></div>
     <div style="height:200px;">
       <br>
       <table class="table table-contensed">
@@ -20,7 +22,14 @@
         </tr>
       </table>
     </div>
-    <button (click)="cancelWorkflowNG()">Cancel Workflow</button>
+    <div>
+      <button (click)="cancelWorkflowNG()">Cancel Workflow</button>
+      <button (click)="cancelWorkflow()">Cancel Workflow (Eventbased)</button>
+      <button (click)="cancelWorkflowAPI()">Cancel Workflow (API Callback)</button>
+    </div>
+    <div>
+      <button (click)="showMessage()">Send a Message to LC</button>
+    </div>
     <div>
       Activity Configuration:
       <pre>
