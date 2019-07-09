@@ -680,6 +680,11 @@ anymatch@^2.0.0:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
 
+api-b9e@^2.42.0-SNAPSHOT:
+  version "2.42.0-SNAPSHOT"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/api-b9e/-/api-b9e-2.42.0-SNAPSHOT.tgz#e084befeef8a311ce5f1fb10d7ae3cf5ebbefe75"
+  integrity sha1-4IS+/u+KMRzl8fsQ16489eu+/nU=
+
 app-root-path@^2.0.1:
   version "2.1.0"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/app-root-path/-/app-root-path-2.1.0.tgz#98bf6599327ecea199309866e8140368fd2e646a"

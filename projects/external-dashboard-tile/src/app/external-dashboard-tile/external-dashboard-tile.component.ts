@@ -1,6 +1,7 @@
 import { Component, Input, ViewEncapsulation, OnInit, AfterViewInit, NgZone, EventEmitter, Output, ElementRef } from '@angular/core';
 import { BackendService } from '../service/backend.service';
-import {GridOptions} from 'ag-grid-community';
+import { GridOptions } from 'ag-grid-community';
+import { ApiB9e, MessageType } from 'api-b9e';
 
 @Component({
   // selector: 'app-external-dashboard-tile',
@@ -18,9 +19,7 @@ export class ExternalDashboardTileComponent implements OnInit, AfterViewInit {
   @Output()
   cancelWfl = new EventEmitter<string>();
   @Input()
-  activityConf: any;
-  @Input()
-  b9eApi: any;
+  b9eApi: ApiB9e;
   @Input()
   activityConfId: string;
 
@@ -84,11 +83,11 @@ export class ExternalDashboardTileComponent implements OnInit, AfterViewInit {
   }
 
   public cancelWorkflowAPI() {
-    this.b9eApi.workflowEngine().cancel();
+    this.b9eApi.wflEngine.cancel();
   }
 
   public showMessage() {
-    this.b9eApi.showMessage('Hello b9e World');
+    this.b9eApi.showMessage(MessageType.WARNING, 'Title', 'Message');
   }
 
   private loadVehicle(objId: string, entity = 'VEH') {
