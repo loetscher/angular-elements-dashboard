@@ -680,11 +680,6 @@ anymatch@^2.0.0:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
 
-api-b9e@^2.42.0-SNAPSHOT:
-  version "2.42.0-SNAPSHOT"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/api-b9e/-/api-b9e-2.42.0-SNAPSHOT.tgz#e084befeef8a311ce5f1fb10d7ae3cf5ebbefe75"
-  integrity sha1-4IS+/u+KMRzl8fsQ16489eu+/nU=
-
 app-root-path@^2.0.1:
   version "2.1.0"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/app-root-path/-/app-root-path-2.1.0.tgz#98bf6599327ecea199309866e8140368fd2e646a"
@@ -927,6 +922,11 @@ aws4@^1.8.0:
   version "1.8.0"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/aws4/-/aws4-1.8.0.tgz#f0e003d9ca9e7f59c7a508945d7b2ef9a04a542f"
   integrity sha1-8OAD2cqef1nHpQiUXXsu+aBKVC8=
+
+b9e-api@^2.42.0-SNAPSHOT:
+  version "2.43.0-SNAPSHOT"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/b9e-api/-/b9e-api-2.43.0-SNAPSHOT.tgz#b837c5f9bf5727fee646e084b31d2c0b3b97a738"
+  integrity sha1-uDfF+b9XJ/7mRuCEsx0sCzuXpzg=
 
 babel-code-frame@^6.22.0, babel-code-frame@^6.26.0:
   version "6.26.0"

@@ -1,7 +1,7 @@
 import { Component, Input, ViewEncapsulation, OnInit, AfterViewInit, NgZone, EventEmitter, Output, ElementRef } from '@angular/core';
 import { BackendService } from '../service/backend.service';
 import { GridOptions } from 'ag-grid-community';
-import { ApiB9e, MessageType } from 'api-b9e';
+import { B9e, MessageType } from 'b9e-api';
 
 @Component({
   // selector: 'app-external-dashboard-tile',
@@ -19,7 +19,7 @@ export class ExternalDashboardTileComponent implements OnInit, AfterViewInit {
   @Output()
   cancelWfl = new EventEmitter<string>();
   @Input()
-  b9eApi: ApiB9e;
+  b9eApi: B9e;
   @Input()
   activityConfId: string;
 
