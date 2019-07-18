@@ -5,6 +5,7 @@ import { createCustomElement } from '@angular/elements';
 import { HttpClientModule } from '@angular/common/http';
 import { BackendService } from './service/backend.service';
 import { AgGridModule } from 'ag-grid-angular';
+import { B9eAgGridEncapsulatedComponent } from './components/b9e-ag-grid-encapsulated/b9e-ag-grid-encapsulated.component';
 
 @NgModule({
    imports: [
@@ -13,7 +14,8 @@ import { AgGridModule } from 'ag-grid-angular';
       AgGridModule
    ],
    declarations: [
-    ExternalDashboardTileComponent
+    ExternalDashboardTileComponent,
+    B9eAgGridEncapsulatedComponent
    ],
    providers: [BackendService],
    bootstrap: [],

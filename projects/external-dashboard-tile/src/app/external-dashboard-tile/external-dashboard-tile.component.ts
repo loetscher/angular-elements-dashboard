@@ -1,14 +1,12 @@
 import { Component, Input, ViewEncapsulation, OnInit, AfterViewInit, NgZone, EventEmitter, Output, ElementRef } from '@angular/core';
 import { BackendService } from '../service/backend.service';
-import { GridOptions } from 'ag-grid-community';
 import { B9e, MessageType } from 'b9e-api';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   // selector: 'app-external-dashboard-tile',
   templateUrl: './external-dashboard-tile.component.html',
   styleUrls: ['./external-dashboard-tile.component.scss'],
-  encapsulation: ViewEncapsulation.Native
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class ExternalDashboardTileComponent implements OnInit, AfterViewInit {
 
@@ -26,27 +24,16 @@ export class ExternalDashboardTileComponent implements OnInit, AfterViewInit {
 
   private id: string;
   private _vehicle: any;
-  private _gridOptions: GridOptions;
-  columnDefs: any;
-  autoGroupColumnDef: any;
-  rowData: any;
 
   constructor(private el: ElementRef,
-    private http: HttpClient,
     private backenService: BackendService,
     private zone: NgZone) {
       console.log('init!');
-      this.columnDefs = [
-        { headerName: 'Make', field: 'make', sortable: true, editable: true, resizable: true },
-        { headerName: 'Model', field: 'model', sortable: true, editable: true, resizable: true },
-        { headerName: 'Price', field: 'price', sortable: true, editable: true }
-      ];
   }
 
   ngOnInit(): void {
     this.zone.run(() => console.log('run zone within angular'));
     this.zone.runOutsideAngular(() => console.log('run zone outside angular'));
-    this.rowData = this.http.get('https://api.myjson.com/bins/ly7d1');
   }
 
   ngAfterViewInit() {
@@ -56,20 +43,8 @@ export class ExternalDashboardTileComponent implements OnInit, AfterViewInit {
     }
   }
 
-  onGridReady(params) {
-    // const gridColumnApi = params.columnApi;
-    // const allColumnIds = [];
-    // gridColumnApi.getAllColumns().forEach(column => allColumnIds.push(column.colId));
-    // gridColumnApi.autoSizeColumns(allColumnIds);
-    params.api.sizeColumnsToFit();
-  }
-
   get vehicle(): any {
     return this._vehicle;
-  }
-
-  get gridOptions(): any {
-    return this._gridOptions;
   }
 
   public cancelWorkflowNG() {

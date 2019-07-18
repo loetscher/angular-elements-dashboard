@@ -1,0 +1,9 @@
+<ag-grid-angular
+      #agGrid
+      class="ag-theme-balham"
+      [rowData]="rowData | async"
+      [columnDefs]="columnDefs"
+      rowSelection="multiple"
+      (gridReady)="onGridReady($event)"
+    >
+</ag-grid-angular>
