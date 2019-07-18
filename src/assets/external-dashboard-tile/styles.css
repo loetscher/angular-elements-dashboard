@@ -675,9 +675,7 @@ ag-grid, ag-grid-angular, ag-grid-ng2, ag-grid-polymer, ag-grid-aurelia {
  ****************************
 */
 .ag-row-animation .ag-row {
-  transition: top 0.4s, height 0.4s, background-color 0.1s, opacity 0.2s, -webkit-transform 0.4s;
-  transition: transform 0.4s, top 0.4s, height 0.4s, background-color 0.1s, opacity 0.2s;
-  transition: transform 0.4s, top 0.4s, height 0.4s, background-color 0.1s, opacity 0.2s, -webkit-transform 0.4s; }
+  transition: transform 0.4s, top 0.4s, height 0.4s, background-color 0.1s, opacity 0.2s; }
 .ag-row-no-animation .ag-row {
   transition: background-color 0.1s; }
 .ag-row {
@@ -1038,11 +1036,9 @@ ag-grid, ag-grid-angular, ag-grid-ng2, ag-grid-polymer, ag-grid-aurelia {
   z-index: 1; }
 .ag-rtl .ag-tool-panel-horizontal-resize {
   float: right;
-  -webkit-transform: translateX(3px);
   transform: translateX(3px); }
 .ag-ltr .ag-tool-panel-horizontal-resize {
   float: left;
-  -webkit-transform: translateX(-3px);
   transform: translateX(-3px); }
 .loading-filter {
   background-color: #e6e6e6;
@@ -2584,8 +2580,7 @@ ag-grid, ag-grid-angular, ag-grid-ng2, ag-grid-polymer, ag-grid-aurelia {
     line-height: 32px;
     margin: 0;
     padding: 0 8px;
-    -webkit-transform: translateY(8px);
-            transform: translateY(8px);
+    transform: translateY(8px);
     z-index: 10000; }
   .ag-theme-balham.ag-dnd-ghost span,
     .ag-theme-balham.ag-dnd-ghost div {
@@ -3486,11 +3481,9 @@ ag-grid, ag-grid-angular, ag-grid-ng2, ag-grid-polymer, ag-grid-aurelia {
     border-right: 0; }
   .ag-theme-balham .ag-icon-expanded,
   .ag-theme-balham .ag-icon-contracted {
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px); }
+    transform: translateY(2px); }
   .ag-theme-balham .ag-rtl .ag-icon-expanded {
-    -webkit-transform: translateY(2px) rotate(180deg);
-            transform: translateY(2px) rotate(180deg); }
+    transform: translateY(2px) rotate(180deg); }
   .ag-theme-balham .ag-menu-option {
     height: 28px;
     line-height: 28px; }

@@ -24,7 +24,7 @@ export class ExternalDashboardTileService {
     document.head.appendChild(styles);
     // load js
     const script = document.createElement('script');
-    script.src = `${this.basePath}external-dashboard-tile.bundle.js`;
+    script.src = `${this.basePath}main.js`;
     document.body.appendChild(script);
     this.loaded = true;
   }
