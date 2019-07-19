@@ -22,32 +22,6 @@
         </tr>
       </table>
     </div>
-    <div>
-      <button (click)="cancelWorkflowNG()">Cancel Workflow</button>
-      <button (click)="cancelWorkflow()">Cancel Workflow (Eventbased)</button>
-      <button id="cancelWorkflowAPI" (click)="cancelWorkflowAPI()">Cancel Workflow (API Callback)</button>
-    </div>
-    <div>
-      <button id="showMessage" (click)="showMessage()">Send a Message to LC</button>
-    </div>
-    <div>
-      Activity Configuration:
-      <pre>
-        {{b9eApi?.activity | json}}
-    </pre>
-    </div>
-    <div>
-      Activity ConfigurationId:
-      <pre>
-      {{activityConfId}}
-    </pre>
-    </div>
-    <div>
-        Vehicle Information:
-        <pre>
-          {{vehicle | json}}
-        </pre>
-  </div>
   <div>
     Encapsulated AG-Grid (test with enterprise)
   </div>

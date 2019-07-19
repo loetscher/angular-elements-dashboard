@@ -3,7 +3,6 @@ import { NgModule, Injector } from '@angular/core';
 import { ExternalDashboardTileComponent } from './external-dashboard-tile/external-dashboard-tile.component';
 import { createCustomElement } from '@angular/elements';
 import { HttpClientModule } from '@angular/common/http';
-import { BackendService } from './service/backend.service';
 import { AgGridModule } from 'ag-grid-angular';
 import { B9eAgGridEncapsulatedComponent } from './components/b9e-ag-grid-encapsulated/b9e-ag-grid-encapsulated.component';
 
@@ -17,7 +16,7 @@ import { B9eAgGridEncapsulatedComponent } from './components/b9e-ag-grid-encapsu
     ExternalDashboardTileComponent,
     B9eAgGridEncapsulatedComponent
    ],
-   providers: [BackendService],
+   providers: [],
    bootstrap: [],
    entryComponents: [
        ExternalDashboardTileComponent
