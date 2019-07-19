@@ -560,6 +560,11 @@ ag-grid-community@^20.2.0:
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/ag-grid-community/-/ag-grid-community-20.2.0.tgz#22f26d53e309b51a156878d180c9ec6f16bc6403"
   integrity sha1-IvJtU+MJtRoVaHjRgMnsbxa8ZAM=
 
+ag-grid-enterprise@^20.2.0:
+  version "20.2.0"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/ag-grid-enterprise/-/ag-grid-enterprise-20.2.0.tgz#dbc2c4f6d3c097661911fe40c18dcac775dac04d"
+  integrity sha1-28LE9tPAl2YZEf5AwY3Kx3XawE0=
+
 agent-base@4, agent-base@^4.3.0:
   version "4.3.0"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/agent-base/-/agent-base-4.3.0.tgz#8165f01c436009bccad0b1d122f05ed770efc6ee"

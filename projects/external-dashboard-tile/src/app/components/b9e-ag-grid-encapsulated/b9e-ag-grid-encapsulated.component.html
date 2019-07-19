@@ -4,6 +4,6 @@
       [rowData]="rowData | async"
       [columnDefs]="columnDefs"
       rowSelection="multiple"
-      (gridReady)="onGridReady($event)"
-    >
+      [getContextMenuItems]="getContextMenuItems"
+      (gridReady)="onGridReady($event)">
 </ag-grid-angular>

@@ -166,7 +166,8 @@
               "node_modules/ag-grid-community/dist/styles/ag-theme-balham.css"
             ],
             "scripts": [
-              "node_modules/@webcomponents/custom-elements/src/native-shim.js"
+              "node_modules/@webcomponents/custom-elements/src/native-shim.js",
+              "node_modules/ag-grid-enterprise/dist/ag-grid-enterprise.js"
             ]
           },
           "configurations": {

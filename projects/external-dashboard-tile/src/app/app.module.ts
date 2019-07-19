@@ -11,7 +11,7 @@ import { B9eAgGridEncapsulatedComponent } from './components/b9e-ag-grid-encapsu
    imports: [
       BrowserModule,
       HttpClientModule,
-      AgGridModule
+      AgGridModule.withComponents([])
    ],
    declarations: [
     ExternalDashboardTileComponent,

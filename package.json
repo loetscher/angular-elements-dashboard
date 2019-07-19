@@ -44,6 +44,7 @@
     "@webcomponents/custom-elements": "^1.1.2",
     "ag-grid-angular": "^20.2.0",
     "ag-grid-community": "^20.2.0",
+    "ag-grid-enterprise": "^20.2.0",
     "application": "^0.1.4",
     "core-js": "^2.5.4",
     "install": "^0.12.1",
