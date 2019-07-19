@@ -161,13 +161,10 @@
               "projects/external-dashboard-tile/src/assets"
             ],
             "styles": [
-              "projects/external-dashboard-tile/src/styles.css",
-              "node_modules/ag-grid-community/dist/styles/ag-grid.css",
-              "node_modules/ag-grid-community/dist/styles/ag-theme-balham.css"
+              "projects/external-dashboard-tile/src/styles.css"
             ],
             "scripts": [
-              "node_modules/@webcomponents/custom-elements/src/native-shim.js",
-              "node_modules/ag-grid-enterprise/dist/ag-grid-enterprise.js"
+              "node_modules/@webcomponents/custom-elements/src/native-shim.js"
             ]
           },
           "configurations": {
