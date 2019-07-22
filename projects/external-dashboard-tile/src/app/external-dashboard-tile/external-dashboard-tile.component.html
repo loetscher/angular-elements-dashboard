@@ -1,10 +1,12 @@
-
 <div class="card">
   <div class="header">
-    <h1 class="title">External <span class="icon icon-rocket"></span> </h1>
+    <h1 class="title">External <span class="icon icon-rocket"></span></h1>
   </div>
   <div class="content">
-    <div>Icon from LC <i class="icon--navigation"></i></div>
+    <app-font-face-not-working></app-font-face-not-working>
+    <hr>
+    <div>Icon from LC <i class="icon--navigation"></i> works in custom element</div>
+    <hr>
     <div style="height:200px;">
       <br>
       <table class="table table-contensed">
@@ -22,14 +24,17 @@
         </tr>
       </table>
     </div>
+    <hr>
     <div>
       <button (click)="cancelWorkflowNG()">Cancel Workflow</button>
       <button (click)="cancelWorkflow()">Cancel Workflow (Eventbased)</button>
       <button id="cancelWorkflowAPI" (click)="cancelWorkflowAPI()">Cancel Workflow (API Callback)</button>
     </div>
+    <hr>
     <div>
       <button id="showMessage" (click)="showMessage()">Send a Message to LC</button>
     </div>
+    <hr>
     <div>
       Activity Configuration:
       <pre>
@@ -43,13 +48,14 @@
     </pre>
     </div>
     <div>
-        Vehicle Information:
-        <pre>
+      Vehicle Information:
+      <pre>
           {{vehicle | json}}
         </pre>
+    </div>
+    <hr>
+    <div>
+      Encapsulated AG-Grid (test with enterprise)
+    </div>
+    <app-b9e-ag-grid-encapsulated></app-b9e-ag-grid-encapsulated>
   </div>
-  <div>
-    Encapsulated AG-Grid (test with enterprise)
-  </div>
-  <app-b9e-ag-grid-encapsulated></app-b9e-ag-grid-encapsulated>
-</div>

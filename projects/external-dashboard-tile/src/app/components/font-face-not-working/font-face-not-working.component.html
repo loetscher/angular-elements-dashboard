@@ -1,0 +1,5 @@
+<div>
+  <div>@font-face is not working within this WebComponent. See this icon: <span class="icon icon-rocket"></span></div>
+  <div>Have a look at the shadow dom style node and inspect network traffic: IcoMoon is not loaded by <pre>@font-face: src: url()</pre>...</div>
+  <div>But the icon will be displayed, if the css was imported outside shadow dom, see https://bugs.chromium.org/p/chromium/issues/detail?id=336876#c27 and enable css loading in \src\app\dashboard\external-dashboard-tile.service.ts</div>
+</div>

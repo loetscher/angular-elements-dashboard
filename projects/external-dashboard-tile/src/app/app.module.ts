@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BackendService } from './service/backend.service';
 import { AgGridModule } from 'ag-grid-angular';
 import { B9eAgGridEncapsulatedComponent } from './components/b9e-ag-grid-encapsulated/b9e-ag-grid-encapsulated.component';
+import { FontFaceNotWorkingComponent } from './components/font-face-not-working/font-face-not-working.component';
 
 @NgModule({
    imports: [
@@ -15,7 +16,8 @@ import { B9eAgGridEncapsulatedComponent } from './components/b9e-ag-grid-encapsu
    ],
    declarations: [
     ExternalDashboardTileComponent,
-    B9eAgGridEncapsulatedComponent
+    B9eAgGridEncapsulatedComponent,
+    FontFaceNotWorkingComponent
    ],
    providers: [BackendService],
    bootstrap: [],
