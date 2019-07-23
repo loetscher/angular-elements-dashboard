@@ -149,7 +149,7 @@
       },
       "architect": {
         "build": {
-          "builder": "ngx-build-plus:build",
+          "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/external-dashboard-tile",
             "index": "projects/external-dashboard-tile/src/index.html",
