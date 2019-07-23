@@ -24,7 +24,7 @@ export class ExternalDashboardTileService {
     // document.head.appendChild(styles);
     // load js
     const script = document.createElement('script');
-    script.src = `${this.basePath}main.js?noCache=${Math.random()}`;
+    script.src = `${this.basePath}main-es5.js?noCache=${Math.random()}`;
     document.body.appendChild(script);
     this.loaded = true;
   }
