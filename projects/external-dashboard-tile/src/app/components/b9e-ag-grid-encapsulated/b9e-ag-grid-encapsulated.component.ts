@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { GridOptions, ColDef } from 'ag-grid-community';
-import { ViewEncapsulation } from '@angular/compiler/src/core';
 
 function createFlagImg(flag) {
   return '<img border="0" width="15" height="10" src="https://flags.fmcdn.net/data/flags/mini/' + flag + '.png"/>';
