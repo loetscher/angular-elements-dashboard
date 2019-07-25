@@ -1,5 +1,10 @@
-@import '~ag-grid-community/dist/styles/ag-grid.css';
-@import '~ag-grid-community/dist/styles/ag-theme-balham.css';
+// @import '~ag-grid-community/dist/styles/ag-grid.css';
+// @import '~ag-grid-community/dist/styles/ag-theme-balham.css';
+
+// @import '~bootstrap/dist/css/bootstrap.min.css';
+
+@import '~@bison/biskin-kit/lib/biskin/assets/scss/biskin/colors';
+@import '~@bison/biskin-kit/lib/ag-grid/assets/scss/biskin-ag-grid';
 
 ag-grid-angular {
     &.ag-theme-balham {

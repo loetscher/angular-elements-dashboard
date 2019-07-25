@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, AfterViewInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { GridOptions, ColDef } from 'ag-grid-community';
 
@@ -12,7 +12,7 @@ function createFlagImg(flag) {
   styleUrls: ['./b9e-ag-grid-encapsulated.component.scss'],
   encapsulation: ViewEncapsulation.Native
 })
-export class B9eAgGridEncapsulatedComponent implements OnInit {
+export class B9eAgGridEncapsulatedComponent implements OnInit, AfterViewInit {
 
   private _gridOptions: GridOptions;
   columnDefs: ColDef[];
@@ -22,18 +22,20 @@ export class B9eAgGridEncapsulatedComponent implements OnInit {
 
   constructor(private http: HttpClient) {
     this.columnDefs = [
-      { headerName: 'Make', suppressMenu: false, field: 'make', sortable: true, editable: true, resizable: true, checkboxSelection: true },
+      { headerName: 'Make', suppressMenu: false, field: 'make',
+        sortable: true, editable: true, resizable: true, checkboxSelection: true},
       {
         headerName: 'Model', menuTabs: ['filterMenuTab', 'generalMenuTab', 'columnsMenuTab'],
-        field: 'model', sortable: true, editable: true, resizable: true
+        field: 'model', sortable: true, editable: true, resizable: true, filter: false
       },
       { headerName: 'Price', field: 'price', sortable: true, editable: true }
     ];
 
     this.columnDefsGrouped = [
-      {headerName: 'Make', field: 'make', rowGroup: true },
-      {headerName: 'Price', field: 'price'}
+      { headerName: 'Make', field: 'make', rowGroup: true },
+      { headerName: 'Price', field: 'price' }
     ];
+
     this.autoGroupColumnDef = {
       headerName: 'Model',
       field: 'model',
@@ -42,9 +44,23 @@ export class B9eAgGridEncapsulatedComponent implements OnInit {
         checkbox: true
       }
     };
+
+    this._gridOptions = {
+      defaultColDef: {
+        filter: true // set filtering on for all cols
+      },
+      sideBar: true,
+      floatingFilter: true,
+      suppressContextMenu: true,
+      rowSelection: 'multiple'
+    };
   }
 
   ngOnInit(): void {
+
+  }
+
+  ngAfterViewInit(): void {
     this.rowData = this.http.get('https://api.myjson.com/bins/ly7d1');
   }
 
