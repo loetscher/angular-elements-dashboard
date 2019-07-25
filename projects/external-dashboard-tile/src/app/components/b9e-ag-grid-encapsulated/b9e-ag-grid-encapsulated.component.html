@@ -7,3 +7,13 @@
       [getContextMenuItems]="getContextMenuItems"
       (gridReady)="onGridReady($event)">
 </ag-grid-angular>
+<ag-grid-angular
+      class="ag-theme-balham"
+      [autoGroupColumnDef]="autoGroupColumnDef"
+      [rowData]="rowData | async"
+      [columnDefs]="columnDefsGrouped"
+      rowSelection="multiple"
+      [getContextMenuItems]="getContextMenuItems"
+      (gridReady)="onGridReady($event)">
+</ag-grid-angular>
+

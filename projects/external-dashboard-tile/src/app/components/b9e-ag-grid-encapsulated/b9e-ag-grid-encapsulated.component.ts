@@ -16,15 +16,32 @@ export class B9eAgGridEncapsulatedComponent implements OnInit {
 
   private _gridOptions: GridOptions;
   columnDefs: ColDef[];
+  columnDefsGrouped: ColDef[];
+  autoGroupColumnDef: ColDef;
   rowData: any;
 
   constructor(private http: HttpClient) {
     this.columnDefs = [
-      { headerName: 'Make', suppressMenu: false, field: 'make', sortable: true, editable: true, resizable: true },
-      { headerName: 'Model', menuTabs: ['filterMenuTab', 'generalMenuTab', 'columnsMenuTab'],
-        field: 'model', sortable: true, editable: true, resizable: true },
+      { headerName: 'Make', suppressMenu: false, field: 'make', sortable: true, editable: true, resizable: true, checkboxSelection: true },
+      {
+        headerName: 'Model', menuTabs: ['filterMenuTab', 'generalMenuTab', 'columnsMenuTab'],
+        field: 'model', sortable: true, editable: true, resizable: true
+      },
       { headerName: 'Price', field: 'price', sortable: true, editable: true }
     ];
+
+    this.columnDefsGrouped = [
+      {headerName: 'Make', field: 'make', rowGroup: true },
+      {headerName: 'Price', field: 'price'}
+    ];
+    this.autoGroupColumnDef = {
+      headerName: 'Model',
+      field: 'model',
+      cellRenderer: 'agGroupCellRenderer',
+      cellRendererParams: {
+        checkbox: true
+      }
+    };
   }
 
   ngOnInit(): void {
@@ -47,7 +64,7 @@ export class B9eAgGridEncapsulatedComponent implements OnInit {
     const result = [
       {
         name: 'Alert ' + params.value,
-        action: function() {
+        action: function () {
           window.alert('Alerting about ' + params.value);
         },
         cssClasses: ['redFont', 'bold']
@@ -62,21 +79,21 @@ export class B9eAgGridEncapsulatedComponent implements OnInit {
         subMenu: [
           {
             name: 'Ireland',
-            action: function() {
+            action: function () {
               console.log('Ireland was pressed');
             },
             icon: createFlagImg('ie')
           },
           {
             name: 'UK',
-            action: function() {
+            action: function () {
               console.log('UK was pressed');
             },
             icon: createFlagImg('gb')
           },
           {
             name: 'France',
-            action: function() {
+            action: function () {
               console.log('France was pressed');
             },
             icon: createFlagImg('fr')
@@ -88,55 +105,55 @@ export class B9eAgGridEncapsulatedComponent implements OnInit {
         subMenu: [
           {
             name: 'Niall',
-            action: function() {
+            action: function () {
               console.log('Niall was pressed');
             }
           },
           {
             name: 'Sean',
-            action: function() {
+            action: function () {
               console.log('Sean was pressed');
             }
           },
           {
             name: 'John',
-            action: function() {
+            action: function () {
               console.log('John was pressed');
             }
           },
           {
             name: 'Alberto',
-            action: function() {
+            action: function () {
               console.log('Alberto was pressed');
             }
           },
           {
             name: 'Tony',
-            action: function() {
+            action: function () {
               console.log('Tony was pressed');
             }
           },
           {
             name: 'Andrew',
-            action: function() {
+            action: function () {
               console.log('Andrew was pressed');
             }
           },
           {
             name: 'Kev',
-            action: function() {
+            action: function () {
               console.log('Kev was pressed');
             }
           },
           {
             name: 'Will',
-            action: function() {
+            action: function () {
               console.log('Will was pressed');
             }
           },
           {
             name: 'Armaan',
-            action: function() {
+            action: function () {
               console.log('Armaan was pressed');
             }
           }
@@ -146,7 +163,7 @@ export class B9eAgGridEncapsulatedComponent implements OnInit {
       {
         name: 'Windows',
         shortcut: 'Alt + W',
-        action: function() {
+        action: function () {
           console.log('Windows Item Selected');
         },
         icon: ''
@@ -154,7 +171,7 @@ export class B9eAgGridEncapsulatedComponent implements OnInit {
       {
         name: 'Mac',
         shortcut: 'Alt + M',
-        action: function() {
+        action: function () {
           console.log('Mac Item Selected');
         },
         icon: ''
@@ -163,7 +180,7 @@ export class B9eAgGridEncapsulatedComponent implements OnInit {
       {
         name: 'Checked',
         checked: true,
-        action: function() {
+        action: function () {
           console.log('Checked Selected');
         },
         icon: ''

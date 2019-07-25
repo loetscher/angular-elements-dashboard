@@ -29,7 +29,7 @@
     "copy:ce:local": "cpr dist/external-dashboard-tile/main-es5.js ../../../../web/lean-client/lean-client-biskin/client/src/webComponents/b9e-web-component/main.js -o",
     "bundle:ce": "ng build --project external-dashboard-tile --prod --output-hashing none --single-bundle=true --bundle-styles=false",
     "release:ce": "npm run build:ce && npm run copy:ce:resources",
-    "release:local:ce": "npm run build:ce && npm run copy:ce:resources && npm run copy:ce:local"
+    "release:local:ce": "npm run release:ce && npm run copy:ce:local"
   },
   "private": true,
   "dependencies": {
