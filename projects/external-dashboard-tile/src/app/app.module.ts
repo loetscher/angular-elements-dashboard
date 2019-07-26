@@ -4,26 +4,29 @@ import { ExternalDashboardTileComponent } from './external-dashboard-tile/extern
 import { createCustomElement } from '@angular/elements';
 import { HttpClientModule } from '@angular/common/http';
 import { BackendService } from './service/backend.service';
-import { AgGridModule } from 'ag-grid-angular';
-import { B9eAgGridEncapsulatedComponent } from './components/b9e-ag-grid-encapsulated/b9e-ag-grid-encapsulated.component';
 import { FontFaceNotWorkingComponent } from './components/font-face-not-working/font-face-not-working.component';
+import { B9eAgModule } from './components/b9e-ag-grid-encapsulated/b9e-ag-grid.module';
 
 @NgModule({
-   imports: [
-      BrowserModule,
-      HttpClientModule,
-      AgGridModule.withComponents([])
-   ],
-   declarations: [
-    ExternalDashboardTileComponent,
-    B9eAgGridEncapsulatedComponent,
-    FontFaceNotWorkingComponent
-   ],
-   providers: [BackendService],
-   bootstrap: [],
-   entryComponents: [
-       ExternalDashboardTileComponent
-   ]
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        // enables ag-grid wrapped in a web component
+        B9eAgModule.withConfiguration({
+            usedAsWebComponent: true
+        })
+        // disabled automatic font-face loading
+        // B9eAgModule
+    ],
+    declarations: [
+        ExternalDashboardTileComponent,
+        FontFaceNotWorkingComponent
+    ],
+    providers: [BackendService],
+    bootstrap: [],
+    entryComponents: [
+        ExternalDashboardTileComponent
+    ]
 })
 export class AppModule {
 

@@ -1,7 +1,7 @@
-import { Component, OnInit, ViewEncapsulation, AfterViewInit } from '@angular/core';
+import { Component, OnInit, NgModule, ModuleWithProviders, ViewEncapsulation, AfterViewInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { GridOptions, ColDef } from 'ag-grid-community';
-import { balhamFontFace } from './fontface-style';
+import { balhamFontFace } from './configuration/fontface-style';
 
 function createFlagImg(flag) {
   return '<img border="0" width="15" height="10" src="https://flags.fmcdn.net/data/flags/mini/' + flag + '.png"/>';
