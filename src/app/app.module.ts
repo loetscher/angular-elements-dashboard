@@ -19,7 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     DashboardModule,
     BrowserAnimationsModule,
-    
+
     // FlightCancellingModule,
     // FlightBookingModule, // Verweise auf lazy Module entfernen
 
