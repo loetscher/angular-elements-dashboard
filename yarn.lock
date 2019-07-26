@@ -239,6 +239,13 @@
   dependencies:
     tslib "^1.9.0"
 
+"@bison/biskin-kit@^0.9.0-SNAPSHOT":
+  version "0.9.0-SNAPSHOT"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@bison/biskin-kit/-/@bison/biskin-kit-0.9.0-SNAPSHOT.tgz#720ff72ec76937a4b01823bdbb638f75ec575abf"
+  integrity sha1-cg/3LsdpN6SwGCO9u2OPdexXWr8=
+  dependencies:
+    tslib "^1.9.0"
+
 "@ngtools/webpack@8.1.2":
   version "8.1.2"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@ngtools/webpack/-/webpack-8.1.2.tgz#5f96371d51a7f338a29990916b5b77f55bbf1ca6"
