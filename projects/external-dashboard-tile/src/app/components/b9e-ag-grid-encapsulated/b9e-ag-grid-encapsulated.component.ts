@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { GridOptions, ColDef } from 'ag-grid-community';
 import { ViewEncapsulation } from '@angular/compiler/src/core';
+import { balhamFontFace } from './fontface-style';
 
 function createFlagImg(flag) {
   return '<img border="0" width="15" height="10" src="https://flags.fmcdn.net/data/flags/mini/' + flag + '.png"/>';
@@ -42,6 +43,15 @@ export class B9eAgGridEncapsulatedComponent implements OnInit {
 
   get gridOptions(): any {
     return this._gridOptions;
+  }
+
+  public injectFont() {
+    // load css is needed for IconMoon Font loading as @font-face: is not supported in shadow dom... :-(
+    // see https://bugs.chromium.org/p/chromium/issues/detail?id=336876
+    const fontFaceStyle = document.createElement('style');
+    fontFaceStyle.type = 'text/css';
+    fontFaceStyle.appendChild(document.createTextNode(balhamFontFace));
+    document.head.appendChild(fontFaceStyle);
   }
 
   getContextMenuItems(params) {
