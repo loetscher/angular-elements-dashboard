@@ -239,10 +239,17 @@
   dependencies:
     tslib "^1.9.0"
 
-"@bison/biskin-kit@^0.9.0-SNAPSHOT":
-  version "0.9.0-SNAPSHOT"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@bison/biskin-kit/-/@bison/biskin-kit-0.9.0-SNAPSHOT.tgz#720ff72ec76937a4b01823bdbb638f75ec575abf"
-  integrity sha1-cg/3LsdpN6SwGCO9u2OPdexXWr8=
+"@bison/biskin-kit@~0.12.0-SNAPSHOT":
+  version "0.12.0"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@bison/biskin-kit/-/@bison/biskin-kit-0.12.0.tgz#0f72aae90debd258bff8cd9f3ed9c897b336bdbe"
+  integrity sha1-D3Kq6Q3r0li/+M2fPtnIl7M2vb4=
+  dependencies:
+    tslib "^1.9.0"
+
+"@ng-bootstrap/ng-bootstrap@^5.1.0":
+  version "5.1.0"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/@ng-bootstrap/ng-bootstrap/-/ng-bootstrap-5.1.0.tgz#c0bdb74702d46f58b3cfd526dd77921e6107e7f7"
+  integrity sha1-wL23RwLUb1izz9Um3XeSHmEH5/c=
   dependencies:
     tslib "^1.9.0"
 
@@ -1239,6 +1246,11 @@ bonjour@^3.5.0:
     dns-txt "^2.0.2"
     multicast-dns "^6.0.1"
     multicast-dns-service-types "^1.1.0"
+
+bootstrap@^4.3.1:
+  version "4.3.1"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/bootstrap/-/bootstrap-4.3.1.tgz#280ca8f610504d99d7b6b4bfc4b68cec601704ac"
+  integrity sha1-KAyo9hBQTZnXtrS/xLaM7GAXBKw=
 
 boxen@^1.2.1:
   version "1.3.0"
@@ -4910,6 +4922,11 @@ jasminewd2@^2.1.0:
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/jasminewd2/-/jasminewd2-2.2.0.tgz#e37cf0b17f199cce23bea71b2039395246b4ec4e"
   integrity sha1-43zwsX8ZnM4jvqcbIDk5Uka07E4=
 
+jquery@^3.4.1:
+  version "3.4.1"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
+  integrity sha1-cU8fjZ3eS9+lV2S6N+8hRjDYDvI=
+
 js-base64@^2.1.8:
   version "2.5.1"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/js-base64/-/js-base64-2.5.1.tgz#1efa39ef2c5f7980bb1784ade4a8af2de3291121"
@@ -5925,6 +5942,13 @@ ngx-build-plus@~8.1.1:
     webpack-dev-server "^3.1.14"
     webpack-merge "^4.2.1"
 
+ngx-toastr@^10.0.4:
+  version "10.0.4"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/ngx-toastr/-/ngx-toastr-10.0.4.tgz#cbc61b8d67d748194ea7a28542b01e39bf1fc6c2"
+  integrity sha1-y8YbjWfXSBlOp6KFQrAeOb8fxsI=
+  dependencies:
+    tslib "^1.9.0"
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
@@ -6924,6 +6948,11 @@ policyfile@0.0.4:
   version "0.0.4"
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/policyfile/-/policyfile-0.0.4.tgz#d6b82ead98ae79ebe228e2daf5903311ec982e4d"
   integrity sha1-1rgurZiueeviKOLa9ZAzEeyYLk0=
+
+popper.js@^1.15.0:
+  version "1.15.0"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/popper.js/-/popper.js-1.15.0.tgz#5560b99bbad7647e9faa475c6b8056621f5a4ff2"
+  integrity sha1-VWC5m7rXZH6fqkdca4BWYh9aT/I=
 
 portfinder@^1.0.20:
   version "1.0.21"
