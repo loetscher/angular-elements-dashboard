@@ -6,6 +6,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { BackendService } from './service/backend.service';
 import { FontFaceNotWorkingComponent } from './components/font-face-not-working/font-face-not-working.component';
 import { B9eAgModule } from './components/b9e-ag-grid-encapsulated/b9e-ag-grid.module';
+import { BsKitModule, BsAgGridModule } from '@bison/biskin-kit';
+
 
 @NgModule({
     imports: [
@@ -14,7 +16,12 @@ import { B9eAgModule } from './components/b9e-ag-grid-encapsulated/b9e-ag-grid.m
         // enables ag-grid wrapped in a web component
         B9eAgModule.withConfiguration({
             usedAsWebComponent: true
-        })
+        }),
+        BsKitModule,
+        BsAgGridModule.withConfiguration({
+            enableWebComponentSupport: true
+        }),
+        // BsAgGridModule,
         // disabled automatic font-face loading
         // B9eAgModule
     ],
