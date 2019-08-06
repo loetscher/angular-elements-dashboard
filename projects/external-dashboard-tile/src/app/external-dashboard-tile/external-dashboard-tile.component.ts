@@ -47,6 +47,7 @@ export class ExternalDashboardTileComponent implements OnInit, AfterViewInit {
     return this._vehicle;
   }
 
+  // Workflow
   public cancelWorkflowNG() {
     this.cancelWfl.emit('cancel workflow (EventEmmitter)');
   }
@@ -63,6 +64,18 @@ export class ExternalDashboardTileComponent implements OnInit, AfterViewInit {
 
   public showMessage() {
     this.b9eApi.showMessage(MessageType.WARNING, 'Title', 'Message');
+  }
+
+  public startDefaultWorkflow() {
+    this.b9eApi.wflEngine.startDefaultWfl('PER', '1005000000002q57');
+  }
+
+  public startDefaultSubWfl() {
+    this.b9eApi.wflEngine.startDefaultSubWfl('PER');
+  }
+
+  public startSubWfl() {
+    this.b9eApi.wflEngine.startSubWfl('pp8y', '1005000000002q57');
   }
 
   private loadVehicle(objId: string, entity = 'VEH') {
