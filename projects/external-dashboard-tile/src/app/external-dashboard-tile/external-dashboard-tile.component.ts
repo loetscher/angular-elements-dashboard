@@ -66,10 +66,6 @@ export class ExternalDashboardTileComponent implements OnInit, AfterViewInit {
     this.b9eApi.showMessage(MessageType.WARNING, 'Title', 'Message');
   }
 
-  public startDefaultWorkflow() {
-    this.b9eApi.wflEngine.startDefaultWfl('PER', '1005000000002q57');
-  }
-
   public startDefaultSubWfl() {
     this.b9eApi.wflEngine.startDefaultSubWfl('PER');
   }
