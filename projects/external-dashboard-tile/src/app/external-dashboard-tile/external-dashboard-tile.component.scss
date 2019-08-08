@@ -1,1 +1,6 @@
 // @import '../../IcoMoon/IcoMoon.css';
+@import '~@bison/biskin-kit/lib/biskin/assets/scss/biskin-kit-webcomponents';
+
+.prod, :host-context(.prod) {
+    background-color: red;
+}

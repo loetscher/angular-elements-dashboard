@@ -26,17 +26,17 @@
     </div>
     <hr>
     <div>
-      <button (click)="cancelWorkflowNG()">Cancel Workflow</button>
-      <button (click)="cancelWorkflow()">Cancel Workflow (Eventbased)</button>
-      <button id="cancelWorkflowAPI" (click)="cancelWorkflowAPI()">Cancel Workflow (API Callback)</button>
+      <button (click)="cancelWorkflowNG()" class="btn btn-primary">Cancel Workflow</button>
+      <button (click)="cancelWorkflow()" class="btn btn-secondary">Cancel Workflow (Eventbased)</button>
+      <button id="cancelWorkflowAPI" (click)="cancelWorkflowAPI()" class="btn btn-secondary">Cancel Workflow (API Callback)</button>
     </div>
         <div>
-      <button id="startDefaultSubWfl" (click)="startDefaultSubWfl()">Start default Sub-Worklflow on bet</button>
-      <button id="startSubWfl" (click)="startSubWfl()">Start Sub-Worklflow with wflId and objId as input</button>
+      <button id="startDefaultSubWfl" (click)="startDefaultSubWfl()" class="btn btn-primary">Start default Sub-Worklflow on bet</button>
+      <button id="startSubWfl" (click)="startSubWfl()" class="btn btn-secondary">Start Sub-Worklflow with wflId and objId as input</button>
     </div>
     <hr>
     <div>
-      <button id="showMessage" (click)="showMessage()">Send a Message to LC</button>
+      <button id="showMessage" (click)="showMessage()" class="btn btn-primary">Send a Message to LC</button>
     </div>
     <hr>
     <div>

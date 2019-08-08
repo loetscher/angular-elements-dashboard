@@ -1023,10 +1023,10 @@ axobject-query@^2.0.2:
   dependencies:
     ast-types-flow "0.0.7"
 
-b9e-api@^2.43.0-SNAPSHOT:
-  version "2.43.0-SNAPSHOT.1"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/b9e-api/-/b9e-api-2.43.0-SNAPSHOT.1.tgz#4e8dbd50ef968873f3a18dde6fa5276f41b75bd9"
-  integrity sha1-To29UO+WiHPzoY3eb6Unb0G3W9k=
+b9e-api@2.44.0:
+  version "2.44.0"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/b9e-api/-/b9e-api-2.44.0.tgz#a159af1f71d8828770f7d2e40d632172da7b8c19"
+  integrity sha1-oVmvH3HYgodw99LkDWMhctp7jBk=
 
 babel-code-frame@^6.22.0, babel-code-frame@^6.26.0:
   version "6.26.0"
@@ -2257,6 +2257,11 @@ css-selector-tokenizer@^0.7.1:
     cssesc "^0.1.0"
     fastparse "^1.1.1"
     regexpu-core "^1.0.0"
+
+css-vars@^2.2.0:
+  version "2.2.0"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/css-vars/-/css-vars-2.2.0.tgz#18eefe1a3d1582baba12c969247d09ac2f2ba341"
+  integrity sha1-GO7+Gj0Vgrq6EslpJH0JrC8ro0E=
 
 css@^2.2.4:
   version "2.2.4"

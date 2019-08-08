@@ -6,7 +6,8 @@ import { B9e, MessageType } from 'b9e-api';
   // selector: 'app-external-dashboard-tile',
   templateUrl: './external-dashboard-tile.component.html',
   styleUrls: ['./external-dashboard-tile.component.scss'],
-  encapsulation: ViewEncapsulation.Emulated
+  // encapsulation: ViewEncapsulation.Emulated
+  encapsulation: ViewEncapsulation.ShadowDom
 })
 export class ExternalDashboardTileComponent implements OnInit, AfterViewInit {
 
