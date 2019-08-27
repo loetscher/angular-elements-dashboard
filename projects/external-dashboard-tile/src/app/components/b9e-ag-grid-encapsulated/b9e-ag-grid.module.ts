@@ -9,9 +9,10 @@ import { B9eAgGridInitService, B9eAgGridConfigService } from './configuration/b9
 
 
 export function initializeModule(appInitService: B9eAgGridInitService) {
-    return (): Promise<any> => {
+    const result = (): Promise<any> => {
         return appInitService.initClient();
     }
+    return result;
 }
 
 @NgModule({

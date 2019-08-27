@@ -149,7 +149,7 @@
       },
       "architect": {
         "build": {
-          "builder": "ngx-build-plus:browser",
+          "builder": "ngx-build-plus:build",
           "options": {
             "outputPath": "dist/external-dashboard-tile",
             "index": "projects/external-dashboard-tile/src/index.html",
@@ -194,7 +194,7 @@
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "ngx-build-plus:dev-server",
           "options": {
             "browserTarget": "external-dashboard-tile:build"
           },
