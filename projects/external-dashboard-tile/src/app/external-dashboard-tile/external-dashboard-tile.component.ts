@@ -1,7 +1,7 @@
 import { Component, Input, ViewEncapsulation, OnInit, AfterViewInit, NgZone, EventEmitter, Output, ElementRef } from '@angular/core';
 import { BackendService } from '../service/backend.service';
-import { B9e, MessageType, DeploymentEnvironment } from 'b9e-api';
-import { applyTheme, Theme } from '@bison/biskin-kit';
+import { B9e, MessageType /*, DeploymentEnvironment */} from 'b9e-api';
+// import { applyTheme, Theme } from '@bison/biskin-kit';
 
 @Component({
   // selector: 'app-external-dashboard-tile',
@@ -31,6 +31,13 @@ export class ExternalDashboardTileComponent implements OnInit, AfterViewInit {
     private backenService: BackendService,
     private zone: NgZone) {
       console.log('init!');
+      this.b9eApi = {
+        user: {
+          language: 'de',
+          locale: 'de-CH'
+        },
+        deploymentEnvironment: 'dev'
+      } as B9e;
   }
 
   ngOnInit(): void {
@@ -39,34 +46,35 @@ export class ExternalDashboardTileComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
+    console.log(this.b9eApi);
     if (this.activityConfId) {
       this.id = this.activityConfId;
       this.loadVehicle(this.id );
     }
 
-    if (this.b9eApi && this.b9eApi.deploymentEnvironment) {
-      let theme: Theme;
-      const deploymentEnvironment = this.b9eApi.deploymentEnvironment;
-      switch (deploymentEnvironment) {
-        case DeploymentEnvironment.DEV:
-          theme = 'dev';
-          break;
-        case DeploymentEnvironment.EDUC:
-          theme = 'educ';
-          break;
-        case DeploymentEnvironment.PROD:
-          theme = 'prod';
-          break;
-        case DeploymentEnvironment.REL:
-          theme = 'rel';
-          break;
-        case DeploymentEnvironment.TEST:
-          theme = 'test';
-          break;
+    // if (this.b9eApi && this.b9eApi.deploymentEnvironment) {
+    //   let theme: Theme;
+    //   const deploymentEnvironment = this.b9eApi.deploymentEnvironment;
+    //   switch (deploymentEnvironment) {
+    //     case DeploymentEnvironment.DEV:
+    //       theme = 'dev';
+    //       break;
+    //     case DeploymentEnvironment.EDUC:
+    //       theme = 'educ';
+    //       break;
+    //     case DeploymentEnvironment.PROD:
+    //       theme = 'prod';
+    //       break;
+    //     case DeploymentEnvironment.REL:
+    //       theme = 'rel';
+    //       break;
+    //     case DeploymentEnvironment.TEST:
+    //       theme = 'test';
+    //       break;
 
-      }
-      applyTheme(theme);
-    }
+    //   }
+    //   applyTheme(theme);
+    // }
   }
 
   get vehicle(): any {

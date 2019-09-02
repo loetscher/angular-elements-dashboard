@@ -12,7 +12,7 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --project dashboard -o",
+    "start": "ng serve --project external-dashboard-tile -o",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
