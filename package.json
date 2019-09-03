@@ -42,7 +42,7 @@
     "@angular/platform-browser": "^8.1.2",
     "@angular/platform-browser-dynamic": "^8.1.2",
     "@angular/router": "^8.1.2",
-    "@bison/biskin-kit": "~0.14.0-SNAPSHOT",
+    "@bison/biskin-kit": "~0.16.1-SNAPSHOT",
     "@ng-bootstrap/ng-bootstrap": "^5.1.0",
     "@swimlane/ngx-charts": "^12.0.1",
     "@webcomponents/custom-elements": "^1.2.4",
