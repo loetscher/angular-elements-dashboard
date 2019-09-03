@@ -13,9 +13,15 @@
       </span>
       <span class="mls"> ico-pricetag_outline</span>
     </div>
+    <hr>
     <div class="clearfix bshadow0 pbs">
       User
       <pre id="userSettings">{{b9eApi?.user | json}}</pre>
+    </div>
+    <hr>
+    <div class="clearfix bshadow0 pbs">
+      SystemEnvironment
+      <pre id="systemEnvironment">{{b9eApi?.deploymentEnvironment}}</pre>
     </div>
     <hr>
     <div style="height:200px;">
