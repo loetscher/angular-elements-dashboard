@@ -1,6 +1,6 @@
 import { Component, Input, ViewEncapsulation, OnInit, AfterViewInit, NgZone, EventEmitter, Output, ElementRef } from '@angular/core';
 import { BackendService } from '../service/backend.service';
-import { B9e, MessageType /*, DeploymentEnvironment */} from 'b9e-api';
+import { B9e, MessageType, DeploymentEnvironment} from 'b9e-api';
 import { applyTheme, Theme } from '@bison/biskin-kit';
 
 @Component({
@@ -62,15 +62,15 @@ export class ExternalDashboardTileComponent implements OnInit, AfterViewInit {
         case DeploymentEnvironment.EDUC:
           theme = 'educ';
           break;
-        case DeploymentEnvironment.PROD:
-          theme = 'prod';
-          break;
         case DeploymentEnvironment.REL:
           theme = 'rel';
           break;
         case DeploymentEnvironment.TEST:
           theme = 'test';
           break;
+        case DeploymentEnvironment.PROD:
+        default:
+            theme = 'prod';
 
       }
       applyTheme(theme);
