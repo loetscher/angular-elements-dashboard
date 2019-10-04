@@ -1,4 +1,4 @@
-import { Component, Input, ViewEncapsulation, OnInit, AfterViewInit, NgZone, EventEmitter, Output, ElementRef } from '@angular/core';
+import { Component, Input, ViewEncapsulation, OnDestroy, OnInit, AfterViewInit, NgZone, EventEmitter, Output, ElementRef } from '@angular/core';
 import { BackendService } from '../service/backend.service';
 import { B9e, MessageType, DeploymentEnvironment} from 'b9e-api';
 import { applyTheme, Theme } from '@bison/biskin-kit';
@@ -10,7 +10,7 @@ import { applyTheme, Theme } from '@bison/biskin-kit';
   // encapsulation: ViewEncapsulation.Emulated
   encapsulation: ViewEncapsulation.ShadowDom
 })
-export class ExternalDashboardTileComponent implements OnInit, AfterViewInit {
+export class ExternalDashboardTileComponent implements OnInit, OnDestroy, AfterViewInit {
 
   @Input() a: number;
   @Input() b: number;
@@ -43,6 +43,10 @@ export class ExternalDashboardTileComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     this.zone.run(() => console.log('run zone within angular'));
     this.zone.runOutsideAngular(() => console.log('run zone outside angular'));
+  }
+
+  ngOnDestroy(): void {
+    console.log('web component destroyed');
   }
 
   ngAfterViewInit() {
