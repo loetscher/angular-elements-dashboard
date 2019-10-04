@@ -1,7 +1,17 @@
-import { Component, Input, ViewEncapsulation, OnDestroy, OnInit, AfterViewInit, NgZone, EventEmitter, Output, ElementRef } from '@angular/core';
+import { Component,
+  Input,
+  ViewEncapsulation,
+  OnDestroy,
+  OnInit,
+  AfterViewInit,
+  NgZone,
+  EventEmitter,
+  Output,
+  ElementRef } from '@angular/core';
 import { BackendService } from '../service/backend.service';
 import { B9e, MessageType, DeploymentEnvironment} from 'b9e-api';
 import { applyTheme, Theme } from '@bison/biskin-kit';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   // selector: 'app-external-dashboard-tile',
@@ -29,7 +39,9 @@ export class ExternalDashboardTileComponent implements OnInit, OnDestroy, AfterV
 
   constructor(private el: ElementRef,
     private backenService: BackendService,
-    private zone: NgZone) {
+    private zone: NgZone,
+    private activatedRoute: ActivatedRoute,
+    private router: Router) {
       console.log('init!');
       this.b9eApi = {
         user: {
@@ -38,6 +50,11 @@ export class ExternalDashboardTileComponent implements OnInit, OnDestroy, AfterV
         },
         deploymentEnvironment: 'dev'
       } as B9e;
+
+      this.router.events.subscribe(e => {
+          console.log(e);
+      });
+      console.log(`activated route is: ${this.activatedRoute.pathFromRoot}`);
   }
 
   ngOnInit(): void {
