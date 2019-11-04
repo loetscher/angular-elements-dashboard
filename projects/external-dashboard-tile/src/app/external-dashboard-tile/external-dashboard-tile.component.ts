@@ -9,7 +9,7 @@ import { Component,
   Output,
   ElementRef } from '@angular/core';
 import { BackendService } from '../service/backend.service';
-import { B9e, MessageType, DeploymentEnvironment} from 'b9e-api';
+import { B9e, MessageType, DeploymentEnvironment, WflName, BetName} from 'b9e-api';
 import { applyTheme, Theme } from '@bison/biskin-kit';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -131,6 +131,20 @@ export class ExternalDashboardTileComponent implements OnInit, OnDestroy, AfterV
     this.b9eApi.wflEngine.startSubWfl('pp8y', '1005000000002q57');
   }
 
+  public startBetname() {
+    this.b9eApi.wflEngine.startBisonUrl(new BetName('tstcod')
+    .addParameter('Long10', 'abcd')
+    .addParameter('Long20', 'gugus')
+    .addParameter('Short4', '1234'));
+  }
+
+  public startWflname() {
+    this.b9eApi.wflEngine.startBisonUrl(new WflName('CommunicationNumberSearch')
+    .setIsSubworkflow(true)
+    .addParameter('Obj#', '38l0e')
+    .addParameter('Number', '04112345678'));
+
+  }
   private loadVehicle(objId: string, entity = 'VEH') {
     this.backenService.getDetailEntryById(entity, objId).subscribe(record => {
       if (record && record.data) {
