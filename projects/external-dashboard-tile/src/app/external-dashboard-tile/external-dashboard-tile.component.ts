@@ -9,7 +9,7 @@ import { Component,
   Output,
   ElementRef } from '@angular/core';
 import { BackendService } from '../service/backend.service';
-import { B9e, MessageType, DeploymentEnvironment, WflName, BetName} from 'b9e-api';
+import { B9e, MessageType, DeploymentEnvironment, WflName, BetName, Method, Feature} from 'b9e-api';
 import { applyTheme, Theme } from '@bison/biskin-kit';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -139,10 +139,11 @@ export class ExternalDashboardTileComponent implements OnInit, OnDestroy, AfterV
   }
 
   public startWflname() {
-    this.b9eApi.wflEngine.startBisonUrl(new WflName('CommunicationNumberSearch')
+    this.b9eApi.wflEngine.startBisonUrl(new WflName('UserSearch')
     .setIsSubworkflow(true)
+    .setMethod(new Method(Feature.DISPLAY, 'SystemUsersGroup'))
     .addParameter('Obj#', '38l0e')
-    .addParameter('Number', '04112345678'));
+    .addParameter('Name', 'Muster'));
 
   }
   private loadVehicle(objId: string, entity = 'VEH') {
