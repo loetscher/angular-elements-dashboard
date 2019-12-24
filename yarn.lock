@@ -1727,10 +1727,10 @@ axobject-query@^2.0.2:
   dependencies:
     ast-types-flow "0.0.7"
 
-b9e-api@2.54.1-SNAPSHOT:
-  version "2.54.1-SNAPSHOT"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/b9e-api/-/b9e-api-2.54.1-SNAPSHOT.tgz#1b5dcead106c5eb6af21d39033259624d54ec902"
-  integrity sha1-G13OrRBsXravIdOQMyWWJNVOyQI=
+b9e-api@2.58.0:
+  version "2.58.0"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/b9e-api/-/b9e-api-2.58.0.tgz#b46388ee46ac14af8377a0cdeccd86fa2c064875"
+  integrity sha1-tGOI7kasFK+Dd6DN7M2G+iwGSHU=
 
 babel-code-frame@^6.22.0, babel-code-frame@^6.26.0:
   version "6.26.0"
@@ -10310,10 +10310,10 @@ typescript@3.5.3:
   resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/typescript/-/typescript-3.5.3.tgz#c830f657f93f1ea846819e929092f5fe5983e977"
   integrity sha1-yDD2V/k/HqhGgZ6SkJL1/lmD6Xc=
 
-typescript@~3.4.5:
-  version "3.4.5"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/typescript/-/typescript-3.4.5.tgz#2d2618d10bb566572b8d7aad5180d84257d70a99"
-  integrity sha1-LSYY0Qu1ZlcrjXqtUYDYQlfXCpk=
+typescript@~3.7.0:
+  version "3.7.4"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/typescript/-/typescript-3.7.4.tgz#1743a5ec5fef6a1fa9f3e4708e33c81c73876c19"
+  integrity sha1-F0Ol7F/vah+p8+RwjjPIHHOHbBk=
 
 uglify-js@1.0.6:
   version "1.0.6"

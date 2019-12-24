@@ -1,4 +1,5 @@
-import { Component,
+import {
+  Component,
   Input,
   ViewEncapsulation,
   OnDestroy,
@@ -7,9 +8,10 @@ import { Component,
   NgZone,
   EventEmitter,
   Output,
-  ElementRef } from '@angular/core';
+  ElementRef
+} from '@angular/core';
 import { BackendService } from '../service/backend.service';
-import { B9e, MessageType, DeploymentEnvironment, WflName, BetName, Method, Feature} from 'b9e-api';
+import { B9e, MessageType, DeploymentEnvironment, WflName, BetName, Method, Feature, BisonUrl, BetNameObjId } from 'b9e-api';
 import { applyTheme, Theme } from '@bison/biskin-kit';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -42,19 +44,19 @@ export class ExternalDashboardTileComponent implements OnInit, OnDestroy, AfterV
     private zone: NgZone,
     private activatedRoute: ActivatedRoute,
     private router: Router) {
-      console.log('init!');
-      this.b9eApi = {
-        user: {
-          language: 'de',
-          locale: 'de-CH'
-        },
-        deploymentEnvironment: 'dev'
-      } as B9e;
+    console.log('init!');
+    // this.b9eApi = {
+    //   user: {
+    //     language: 'de',
+    //     locale: 'de-CH'
+    //   },
+    //   deploymentEnvironment: 'dev'
+    // } as B9e;
 
-      this.router.events.subscribe(e => {
-          console.log(e);
-      });
-      console.log(`activated route is: ${this.activatedRoute.pathFromRoot}`);
+    this.router.events.subscribe(e => {
+      console.log(e);
+    });
+    console.log(`activated route is: ${this.activatedRoute.pathFromRoot}`);
   }
 
   ngOnInit(): void {
@@ -70,8 +72,10 @@ export class ExternalDashboardTileComponent implements OnInit, OnDestroy, AfterV
     console.log(this.b9eApi);
     if (this.activityConfId) {
       this.id = this.activityConfId;
-      this.loadVehicle(this.id );
+      this.loadVehicle(this.id);
     }
+    const url = new BetNameObjId('veh', 'qwertz');
+    console.log(this.b9eApi.wflEngine.startBisonUrl(url));
 
     if (this.b9eApi && this.b9eApi.deploymentEnvironment) {
       let theme: Theme;
@@ -91,7 +95,7 @@ export class ExternalDashboardTileComponent implements OnInit, OnDestroy, AfterV
           break;
         case DeploymentEnvironment.PROD:
         default:
-            theme = 'prod';
+          theme = 'prod';
 
       }
       applyTheme(theme);
@@ -109,7 +113,8 @@ export class ExternalDashboardTileComponent implements OnInit, OnDestroy, AfterV
 
   public cancelWorkflow() {
     const customEvent = new CustomEvent('CustomWebcomponentEvent', {
-      bubbles: true, cancelable: true, detail: 'cancel workflow (dispatched)' });
+      bubbles: true, cancelable: true, detail: 'cancel workflow (dispatched)'
+    });
     this.el.nativeElement.dispatchEvent(customEvent);
   }
 
@@ -133,17 +138,17 @@ export class ExternalDashboardTileComponent implements OnInit, OnDestroy, AfterV
 
   public startBetname() {
     this.b9eApi.wflEngine.startBisonUrl(new BetName('tstcod')
-    .addParameter('Long10', 'abcd')
-    .addParameter('Long20', 'gugus')
-    .addParameter('Short4', '1234'));
+      .addParameter('Long10', 'abcd')
+      .addParameter('Long20', 'gugus')
+      .addParameter('Short4', '1234'));
   }
 
   public startWflname() {
     this.b9eApi.wflEngine.startBisonUrl(new WflName('UserSearch')
-    .setIsSubworkflow(true)
-    .setMethod(new Method(Feature.DISPLAY, 'SystemUsersGroup'))
-    .addParameter('Obj#', '38l0e')
-    .addParameter('Name', 'Muster'));
+      .setIsSubworkflow(true)
+      .setMethod(new Method(Feature.DISPLAY, 'SystemUsersGroup'))
+      .addParameter('Obj#', '38l0e')
+      .addParameter('Name', 'Muster'));
 
   }
   private loadVehicle(objId: string, entity = 'VEH') {
@@ -151,6 +156,6 @@ export class ExternalDashboardTileComponent implements OnInit, OnDestroy, AfterV
       if (record && record.data) {
         this._vehicle = record.data[0];
       }
-  });
+    });
   }
 }
