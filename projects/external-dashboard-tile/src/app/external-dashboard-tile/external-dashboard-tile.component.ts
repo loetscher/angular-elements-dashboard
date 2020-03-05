@@ -10,7 +10,7 @@ import { Component,
   ElementRef } from '@angular/core';
 import { BackendService } from '../service/backend.service';
 import { B9e, MessageType, DeploymentEnvironment, WflName, BetName, Method, Feature} from 'b9e-api';
-import { applyTheme, Theme } from '@bison/biskin-kit';
+// import { applyTheme, Theme } from '@bison/biskin-kit';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -73,29 +73,29 @@ export class ExternalDashboardTileComponent implements OnInit, OnDestroy, AfterV
       this.loadVehicle(this.id );
     }
 
-    if (this.b9eApi && this.b9eApi.deploymentEnvironment) {
-      let theme: Theme;
-      const deploymentEnvironment = this.b9eApi.deploymentEnvironment;
-      switch (deploymentEnvironment) {
-        case DeploymentEnvironment.DEV:
-          theme = 'dev';
-          break;
-        case DeploymentEnvironment.EDUC:
-          theme = 'educ';
-          break;
-        case DeploymentEnvironment.REL:
-          theme = 'rel';
-          break;
-        case DeploymentEnvironment.TEST:
-          theme = 'test';
-          break;
-        case DeploymentEnvironment.PROD:
-        default:
-            theme = 'prod';
+    // if (this.b9eApi && this.b9eApi.deploymentEnvironment) {
+      // let theme: Theme;
+      // const deploymentEnvironment = this.b9eApi.deploymentEnvironment;
+      // switch (deploymentEnvironment) {
+      //   case DeploymentEnvironment.DEV:
+      //     theme = 'dev';
+      //     break;
+      //   case DeploymentEnvironment.EDUC:
+      //     theme = 'educ';
+      //     break;
+      //   case DeploymentEnvironment.REL:
+      //     theme = 'rel';
+      //     break;
+      //   case DeploymentEnvironment.TEST:
+      //     theme = 'test';
+      //     break;
+      //   case DeploymentEnvironment.PROD:
+      //   default:
+      //       theme = 'prod';
 
-      }
-      applyTheme(theme);
-    }
+      // }
+      // applyTheme(theme);
+    // }
   }
 
   get vehicle(): any {
