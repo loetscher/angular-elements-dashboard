@@ -26,7 +26,7 @@ export function initializeModule(appInitService: B9eAgGridInitService) {
     exports: [B9eAgGridEncapsulatedComponent]
 })
 export class B9eAgModule {
-    static withConfiguration(config: B9eAgGridConfig): ModuleWithProviders {
+    static withConfiguration(config: B9eAgGridConfig): ModuleWithProviders<B9eAgModule> {
         return {
             ngModule: B9eAgModule,
             providers: [
