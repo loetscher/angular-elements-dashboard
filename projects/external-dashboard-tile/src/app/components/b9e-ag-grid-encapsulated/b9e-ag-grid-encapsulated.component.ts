@@ -11,7 +11,7 @@ function createFlagImg(flag) {
   selector: 'app-b9e-ag-grid-encapsulated',
   templateUrl: './b9e-ag-grid-encapsulated.component.html',
   styleUrls: ['./b9e-ag-grid-encapsulated.component.scss'],
-  encapsulation: ViewEncapsulation.Native
+  encapsulation: ViewEncapsulation.ShadowDom
 })
 export class B9eAgGridEncapsulatedComponent implements OnInit, AfterViewInit {
 
