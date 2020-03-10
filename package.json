@@ -27,6 +27,7 @@
     "copy:ce:style": "cpr dist/external-dashboard-tile/styles.css src/assets/external-dashboard-tile/styles.css -f -o",
     "copy:ce:assets": "cpr dist/external-dashboard-tile/IcoMoon-Free.ttf src/assets/external-dashboard-tile/IcoMoon-Free.ttf -f -o",
     "copy:ce:local": "cpr dist/external-dashboard-tile/main.js ../../../../web/lean-client/lean-client-biskin/client/src/webComponents/b9e-web-component/main.js -o",
+    "copy:ce:local:nb": "cpr dist/external-dashboard-tile/main.js ../lean-client/lean-client-biskin/client/src/webComponents/b9e-web-component/main.js -o",
     "bundle:ce": "ng build --project external-dashboard-tile --prod --sourceMap=true --output-hashing none --single-bundle=true --bundle-styles=false",
     "release:ce": "npm run build:ce && npm run copy:ce:resources",
     "release:local:ce": "npm run release:ce && npm run copy:ce:local"
