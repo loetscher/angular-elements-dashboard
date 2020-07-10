@@ -2116,10 +2116,10 @@ axobject-query@2.0.2:
   dependencies:
     ast-types-flow "0.0.7"
 
-b9e-api@2.58.0:
-  version "2.58.0"
-  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/b9e-api/-/b9e-api-2.58.0.tgz#b46388ee46ac14af8377a0cdeccd86fa2c064875"
-  integrity sha1-tGOI7kasFK+Dd6DN7M2G+iwGSHU=
+b9e-api@2.65.0:
+  version "2.65.0"
+  resolved "http://repo.bison-group.com:80/artifactory/api/npm/npm-cache/b9e-api/-/b9e-api-2.65.0.tgz#f3fedfb196897671c525ccdf77ab34aa9b9d19ac"
+  integrity sha1-8/7fsZaJdnHFJczfd6s0qpudGaw=
 
 babel-code-frame@^6.22.0, babel-code-frame@^6.26.0:
   version "6.26.0"
