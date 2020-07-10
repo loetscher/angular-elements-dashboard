@@ -11,7 +11,7 @@ function createFlagImg(flag) {
   selector: 'app-b9e-ag-grid-encapsulated',
   templateUrl: './b9e-ag-grid-encapsulated.component.html',
   styleUrls: ['./b9e-ag-grid-encapsulated.component.scss'],
-  encapsulation: ViewEncapsulation.Native
+  encapsulation: ViewEncapsulation.ShadowDom
 })
 export class B9eAgGridEncapsulatedComponent implements OnInit, AfterViewInit {
 
@@ -23,8 +23,10 @@ export class B9eAgGridEncapsulatedComponent implements OnInit, AfterViewInit {
 
   constructor(private http: HttpClient) {
     this.columnDefs = [
-      { headerName: 'Make', suppressMenu: false, field: 'make',
-        sortable: true, editable: true, resizable: true, checkboxSelection: true},
+      {
+        headerName: 'Make', suppressMenu: false, field: 'make',
+        sortable: true, editable: true, resizable: true, checkboxSelection: true
+      },
       {
         headerName: 'Model', menuTabs: ['filterMenuTab', 'generalMenuTab', 'columnsMenuTab'],
         field: 'model', sortable: true, editable: true, resizable: true, filter: false
