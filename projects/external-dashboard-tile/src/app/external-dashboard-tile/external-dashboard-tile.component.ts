@@ -74,8 +74,8 @@ export class ExternalDashboardTileComponent implements OnInit, OnDestroy, AfterV
       this.id = this.activityConfId;
       this.loadVehicle(this.id);
     }
-    const url = new BetNameObjId('veh', 'qwertz');
-    console.log(this.b9eApi.wflEngine.startBisonUrl(url));
+    // const url = new BetNameObjId('veh', 'qwertz');
+    // console.log(this.b9eApi.wflEngine.startBisonUrl(url));
 
     if (this.b9eApi && this.b9eApi.deploymentEnvironment) {
       let theme: Theme;
