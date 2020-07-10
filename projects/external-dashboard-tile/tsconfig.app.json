@@ -3,7 +3,8 @@
   "compilerOptions": {
     "outDir": "../../out-tsc/app",
     "module": "es2015",
-    "types": []
+    "types": [],
+    "skipLibCheck": true
   },
   "angularCompilerOptions": {
     "enableIvy": false
